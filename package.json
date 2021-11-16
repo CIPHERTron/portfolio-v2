@@ -1,11 +1,25 @@
 {
-  "private": true,
-  "name": "minimal-blog",
-  "description": "Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.",
-  "version": "1.3.12",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "name": "portfolio-v2",
+  "private": "true",
+  "version": "2.0.0",
+  "description": "Second version of my personal portfolio site.",
+  "author": "Pritish Samal <pritish.samal918@gmail.co>",
   "license": "0BSD",
-  "starter-name": "gatsby-starter-minimal-blog",
+  "keywords": [
+    "Pritish",
+    "Samal",
+    "NIT Rourkela",
+    "portfolio",
+    "gatsby",
+    "material-ui",
+    "full-stack-developer",
+    "cloud-computing",
+    "styled-components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https:github.com/CIPHERTron/portfolio-v2"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -17,17 +31,44 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "^4.0.0",
+    "@mui/material": "^5.1.0",
+    "@mui/styled-engine-sc": "^5.1.0",
+    "feather-icons": "^4.28.0",
     "gatsby": "^4.0.0",
     "gatsby-omni-font-loader": "^1.3.1",
     "gatsby-plugin-feed": "^4.0.0",
     "gatsby-plugin-gatsby-cloud": "^4.0.0",
+    "gatsby-plugin-google-gtag": "^4.0.0",
+    "gatsby-plugin-image": "^1.10.1",
+    "gatsby-plugin-netlify": "^3.14.0",
+    "gatsby-plugin-offline": "^4.10.0",
+    "gatsby-plugin-react-helmet": "^4.10.0",
+    "gatsby-plugin-robots-txt": "^1.6.8",
+    "gatsby-plugin-sharp": "^3.10.2",
+    "gatsby-plugin-styled-components": "^4.10.0",
     "gatsby-plugin-manifest": "^4.0.0",
     "gatsby-plugin-sitemap": "^5.0.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.22",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "autoprefixer": "^10.2.6",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.29.0",
+    "eslint-config": "^0.3.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gatsby-plugin-postcss": "^4.7.1",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.1"
   }
 }

@@ -42,36 +42,36 @@ Normally, `npm install <dependency>` will install a dependency in that project i
 
 Before coming on to what Poetry actually is, let me explain its use cases and how it makes our life easier. The two major issues that we face using python are:
 
-### 1. Manually creating and managing virtual environments <br>
+### 1. Manually creating and managing virtual environments
 
 In python, we can use many ways to make virtual environments with `venv` being its standard library. Few other libraries include `virtualenv`, and `conda`. For beginners, it is recommended to use the `pip` & `virtualenv` combo.
 _To create a virtual environment:_
 
 - With `venv`:
 
-```console
+```bash
 $ python3 -m venv .venv
 ```
 
 - With `virtualenv`:
 
-```console
+```bash
 $ virtualenv venv
 ```
 
 _To activate a virtual environment:_
 
-```console
+```bash
 $ .venv/Scripts/Activate.ps1
 ```
 
 Voila! our virtual environment is activated. Now, we can install any dependency using `pip install`. But if you see the process, it is very much time consuming.
 
-### 2. `requirements.txt` file is too primitive to deal with!<br>
+### 2. requirements.txt file is too primitive to deal with!
 
 Generally, we can export `requirements.txt` which defines all the dependencies we've installed using `pip`. We can export it by:
 
-```console
+```bash
 $ pip freeze > requirements.txt
 ```
 
@@ -116,14 +116,14 @@ Poetry has a well documented set of instructions on [how to install](https://pyt
 
 > Prerequisite: If you don't have `curl` installed, you can do so by:
 
-```console
+```bash
 $ sudo apt update
 $ sudo apt install curl
 ```
 
 _The installation guidelines as stated in the official documentation are listed below!_
 
-```console
+```bash
 # osx / linux / bashonwindows install instructions
 $ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
@@ -136,7 +136,7 @@ $ pip install --user poetry
 
 Voila! Poetry will be now installed in your system. To confirm it, you can:
 
-```console
+```bash
 $ poetry --version
 Poetry version 1.1.6
 ```
@@ -145,7 +145,7 @@ Poetry version 1.1.6
 
 Before we get started with Poetry, we have to make sure of some configurations. You can always type `poetry --help` and it'll display the set of commands & arguments and how to use them else refer to their [configuration documentation](https://python-poetry.org/docs/configuration/). I've listed below the required configurations. Make sure you do the same.
 
-```console
+```bash
 # To list all the configurations
 $ poetry config --list
 cache-dir = "/home/john/.cache/pypoetry"
@@ -158,19 +158,19 @@ virtualenvs.path = "{cache-dir}/virtualenvs"  # /home/john/.cache/pypoetry/virtu
 
 To change or modify any configuration for instance, `virtualenvs.create`, you can:
 
-```console
+```bash
 $ poetry config virtualenvs.create false
 ```
 
 Else, if you want to modify the configuration only for a specific project, Poetry provides a `--local` option to the config command to do the same.
 
-```console
+```bash
 $ poetry config virtualenvs.create false --local
 ```
 
 If you want to remove a configuration, you can:
 
-```
+```bash
 $ poetry config virtualenvs.path --unset
 ```
 
@@ -179,7 +179,7 @@ $ poetry config virtualenvs.path --unset
 Now we are all set to get started with Poetry. Yayy!!
 So, we will be initialising a Poetry project in the Desktop directory. To initialise an empty project, we can type:
 
-```console
+```bash
 ~/Desktop$ poetry new poetry-kickstart
 Created package poetry_kickstart in poetry-kickstart
 ```
@@ -188,7 +188,7 @@ A new package named `poetry-kickstart` will now be created in your Desktop. We a
 
 We will be having the following contents inside the `poetry-kickstart` package.
 
-```
+```bash
 poetry-kickstart
 ├── pyproject.toml
 ├── README.rst
@@ -200,7 +200,7 @@ poetry-kickstart
 
 Then, we will spawn a shell using `poetry shell` command and install `flask`.
 
-```
+```bash
 ~/Desktop/poetry-kickstart$ poetry shell
 Spawning shell within Desktop/poetry-kickstart/.venv
 . Desktop/poetry-kickstart/.venv/bin/activate
@@ -225,7 +225,7 @@ Package operations: 6 installs, 0 updates, 0 removals
 
 Spawning a shell will make a virtual environment and automatically activate it. Thus, the contents inside the poetry-kickstart package will be:
 
-```
+```bash
 poetry-kickstart
 ├── .venv
 ├── poetry.lock
@@ -257,7 +257,7 @@ We have a simple route. Now, let's check if it's working or not. But before that
 
 To check the sample API,
 
-```console
+```bash
 (.venv) $ poetry run python -m poetry-kickstart
  * Serving Flask app 'poetry-kickstart' (lazy loading)
  * Environment: production

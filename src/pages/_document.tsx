@@ -4,7 +4,6 @@ import type { DocumentContext } from "next/document";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import * as React from "react";
 
-import { UMAMI_SRC, UMAMI_WEBSITE_ID } from "constants/umami";
 import createEmotionCache from "styles/createEmotionCache";
 import customTheme from "styles/theme";
 
@@ -63,16 +62,6 @@ class MyDocument extends Document {
           {/* add your own app-icon */}
           <link rel="icon" href="/favicon.png" />
           <link rel="manifest" href="/manifest.json" />
-
-          {/* umami self-hosted analytics */}
-
-          <script
-            async
-            defer
-            data-website-id={UMAMI_WEBSITE_ID}
-            src={UMAMI_SRC}
-            data-domains="sznm.dev"
-          />
         </Head>
         <body>
           <ColorModeScript
@@ -81,7 +70,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <script
-            src="//code.tidio.co/nbaxoinlj2ab2lhrtkq2erilbzxyxzos.js"
+            src="//code.tidio.co/1akzfxeqrqrftvc2dnnar4sdfugvdi4m.js"
             async
           />
         </body>

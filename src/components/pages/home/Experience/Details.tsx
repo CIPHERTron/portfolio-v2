@@ -1,14 +1,13 @@
 import {
   Box,
-  Heading,
   Flex,
   List,
   ListItem,
   ListIcon,
   Link,
   Text,
-  useMediaQuery,
 } from "@chakra-ui/react";
+import styled from "@emotion/styled";
 import { FaHive } from "react-icons/fa";
 
 type CompanyProps = {
@@ -19,20 +18,53 @@ type CompanyProps = {
   content: Array<string>;
 };
 
+const Role = styled.h2`
+  font-family: Catamaran, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: start;
+  color: #e2e8f0;
+  background-color: #1a202c;
+  padding: 0 5px;
+  border-radius: 4px;
+
+  @media (max-width: 911px) {
+    font-size: 18px;
+  }
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+`;
+
+const Org = styled.h2`
+  font-family: Catamaran, sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 36px;
+  text-align: start;
+  color: #808080;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 20px;
+
+  @media (max-width: 911px) {
+    font-size: 22px;
+    margin-left: 10px;
+  }
+  @media (max-width: 911px) {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+`;
+
 const Details = ({ ...company }: CompanyProps) => {
-  const [isSmallerThan500] = useMediaQuery("(max-width: 500px)");
   return (
     <Box>
       <Flex justifyContent="flex-start" alignItems="center">
-        <Heading size={isSmallerThan500 ? "sm" : "lg"}>{company.role}</Heading>
+        <Role>{company.role}</Role>
         <Link href={company.link}>
-          <Heading
-            textDecoration="underline"
-            color="GrayText"
-            size="md"
-            cursor="pointer"
-            ml={3}
-          >{`@${company.org}`}</Heading>
+          <Org>{`@${company.org}`}</Org>
         </Link>
       </Flex>
       <Text>{company.date}</Text>

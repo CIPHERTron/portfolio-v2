@@ -44,7 +44,7 @@ export const experience = [
     ],
   },
   {
-    org: "Humaps Private Ltd.",
+    org: "Humaps",
     role: "Freelance Developer",
     link: "https://humaps.in",
     date: "November, 2020 - December, 2020",

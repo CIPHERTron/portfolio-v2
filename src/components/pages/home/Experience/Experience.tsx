@@ -51,6 +51,7 @@ const TabContainer = styled.div`
 
 function Experience() {
   const [company, setCompany] = useState(experience[0]);
+  // const [active, setActive] = useState(experience[0].org);
 
   return (
     <>
@@ -61,10 +62,18 @@ function Experience() {
         <Orgs>
           {experience.map((item) => (
             <TabContainer
+              style={
+                item.org === company.org
+                  ? {
+                      backgroundColor: "#112240",
+                      color: "#fff",
+                      border: "2px solid #5d6a84",
+                    }
+                  : {}
+              }
               id={item.org}
               key={item.org}
               onClick={() => setCompany(item)}
-              className="active"
             >
               <h1>{item.org}</h1>
             </TabContainer>

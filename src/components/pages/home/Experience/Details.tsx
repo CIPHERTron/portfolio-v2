@@ -20,9 +20,9 @@ type CompanyProps = {
 
 const Role = styled.h2`
   font-family: Catamaran, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 36px;
+  line-height: 26px;
   text-align: start;
   color: #e2e8f0;
   background-color: #1a202c;
@@ -39,9 +39,9 @@ const Role = styled.h2`
 
 const Org = styled.h2`
   font-family: Catamaran, sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bolder;
-  line-height: 36px;
+  line-height: 26px;
   text-align: start;
   color: #808080;
   text-decoration: underline;

@@ -3,8 +3,6 @@ import { useRouter } from "next/router";
 import type { IconType } from "react-icons";
 import { FaFeatherAlt, FaHome, FaRocket, FaUser } from "react-icons/fa";
 
-import { trackEventToUmami } from "utils/trackEvent";
-
 type NavItemProps = {
   href: string;
   label: string;
@@ -15,7 +13,6 @@ const NavItem = ({ href, label, icon }: NavItemProps) => {
   const router = useRouter();
 
   const handleClickNavigation = () => {
-    trackEventToUmami(`Nav Link: ${label}`, "navigate");
     router.push(href);
   };
 

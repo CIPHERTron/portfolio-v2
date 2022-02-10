@@ -6,7 +6,6 @@ import { FaArrowRight } from "react-icons/fa";
 
 import Card from "components/projects/Card";
 import type { ProjectType } from "models/project";
-import { trackEventToUmami } from "utils/trackEvent";
 
 export type ProjectsSectionProps = { data: Array<ProjectType> };
 
@@ -21,10 +20,6 @@ const ProjectsSection = ({ data }: ProjectsSectionProps) => {
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
-
-  const handleClickViewAllProjects = () => {
-    trackEventToUmami("Home: View All Projects", "navigate");
-  };
 
   return (
     <Stack as="section" marginBottom={16} spacing={4}>
@@ -57,7 +52,6 @@ const ProjectsSection = ({ data }: ProjectsSectionProps) => {
             paddingX={0}
             variant="ghost"
             fontFamily="heading"
-            onClick={handleClickViewAllProjects}
           >
             view all projects
           </Button>

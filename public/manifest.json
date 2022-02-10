@@ -11,9 +11,9 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "/avataaars.svg",
-      "purpose": "maskable any",
-      "sizes": "48x48 72x72 96x96 128x128 256x256"
+      "src": "/favicon.png",
+      "purpose": "maskable none",
+      "sizes": "32x32"
     }
   ]
 }

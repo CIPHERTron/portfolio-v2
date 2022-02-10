@@ -3,7 +3,6 @@ import Head from "next/head";
 const Meta = () => {
   return (
     <Head>
-      <link rel="icon" href="/avataaars.svg" />
       <link
         rel="alternate"
         type="application/rss+xml"

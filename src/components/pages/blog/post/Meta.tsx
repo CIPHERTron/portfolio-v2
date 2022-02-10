@@ -1,14 +1,14 @@
 import { BlogJsonLd, NextSeo } from "next-seo";
 
 import { baseUrl } from "constants/baseUrl";
-import { sznmOgImage } from "utils/sznmOgImage";
+import { PSOgImage } from "utils/PSOgImage";
 
 import type { BlogPostProps } from "./types";
 
 type BlogPostMetaProps = Pick<BlogPostProps, "postData">;
 
 const BlogPostMeta = ({ postData }: BlogPostMetaProps) => {
-  const ogImage = sznmOgImage(postData.title);
+  const ogImage = PSOgImage(postData.title);
   const pageUrl = `${baseUrl}/blog/${postData.id}`;
 
   return (

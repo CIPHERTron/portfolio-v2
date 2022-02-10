@@ -3,7 +3,7 @@ import { NextSeo } from "next-seo";
 
 import BlogPostPreview from "components/blog/BlogPostPreview";
 import { baseUrl } from "constants/baseUrl";
-import { sznmOgImage } from "utils/sznmOgImage";
+import { PSOgImage } from "utils/PSOgImage";
 
 import type { BlogPostListProps } from "./types";
 
@@ -21,7 +21,7 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
           title: "Blog Posts | Pritish",
           images: [
             {
-              url: sznmOgImage("Blog Posts | Pritish"),
+              url: PSOgImage("Blog Posts | Pritish"),
               alt: "Blog Posts | Pritish og-image",
             },
           ],

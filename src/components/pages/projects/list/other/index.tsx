@@ -11,7 +11,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 
 import ProjectDetailWrapper from "components/projects/detail";
 import { baseUrl } from "constants/baseUrl";
-import { sznmOgImage } from "utils/sznmOgImage";
+import { PSOgImage } from "utils/PSOgImage";
 import { trackEventToUmami } from "utils/trackEvent";
 
 import type { OtherProjectsProps } from "./types";
@@ -32,7 +32,7 @@ const OtherProjects = ({ otherProjects }: OtherProjectsProps) => {
           title: "Projects by Pritish",
           images: [
             {
-              url: sznmOgImage("Projects"),
+              url: PSOgImage("Projects"),
               alt: "Other Projects | Pritish og-image",
             },
           ],

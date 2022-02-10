@@ -5,7 +5,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 
 import ProjectDetailWrapper from "components/projects/detail";
 import { baseUrl } from "constants/baseUrl";
-import { sznmOgImage } from "utils/sznmOgImage";
+import { PSOgImage } from "utils/PSOgImage";
 
 import type { ProjectDetailProps } from "./types";
 
@@ -21,7 +21,7 @@ const ProjectDetail = ({ projectData }: ProjectDetailProps) => {
           title: `${projectData.title} | Pritish`,
           images: [
             {
-              url: sznmOgImage(projectData.title),
+              url: PSOgImage(projectData.title),
               alt: `${projectData.title} | Pritish og-image`,
             },
           ],

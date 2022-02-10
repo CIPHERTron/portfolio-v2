@@ -3,7 +3,7 @@ import { NextSeo } from "next-seo";
 
 import ProjectDetailWrapper from "components/projects/detail";
 import { baseUrl } from "constants/baseUrl";
-import { sznmOgImage } from "utils/sznmOgImage";
+import { PSOgImage } from "utils/PSOgImage";
 
 import ProjectListBottomNav from "./BottomNav";
 import type { ProjectListProps } from "./types";
@@ -28,7 +28,7 @@ const ProjectList = ({ featuredProjects }: ProjectListProps) => {
           title: "Projects by Pritish",
           images: [
             {
-              url: sznmOgImage("Projects"),
+              url: PSOgImage("Projects"),
               alt: "Projects | Pritish og-image",
             },
           ],

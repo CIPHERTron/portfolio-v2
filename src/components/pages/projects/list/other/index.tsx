@@ -12,16 +12,11 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import ProjectDetailWrapper from "components/projects/detail";
 import { baseUrl } from "constants/baseUrl";
 import { PSOgImage } from "utils/PSOgImage";
-import { trackEventToUmami } from "utils/trackEvent";
 
 import type { OtherProjectsProps } from "./types";
 
 const OtherProjects = ({ otherProjects }: OtherProjectsProps) => {
   const buttonColor = useColorModeValue("gray.300", "gray.600");
-
-  const handleBackToFeaturedProjects = () => {
-    trackEventToUmami("Other Projects: Back to Featured Projects", "navigate");
-  };
 
   return (
     <>
@@ -45,7 +40,6 @@ const OtherProjects = ({ otherProjects }: OtherProjectsProps) => {
           size="sm"
           backgroundColor={buttonColor}
           marginBottom={22}
-          onClick={handleBackToFeaturedProjects}
         >
           projects
         </Button>

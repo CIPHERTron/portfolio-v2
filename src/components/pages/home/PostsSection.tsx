@@ -4,17 +4,12 @@ import { FaArrowRight } from "react-icons/fa";
 
 import BlogPostPreview from "components/blog/BlogPostPreview";
 import type { BlogPostType } from "models/blog";
-import { trackEventToUmami } from "utils/trackEvent";
 
 export type PostsSectionProps = {
   data: Array<BlogPostType>;
 };
 
 const PostsSection = ({ data }: PostsSectionProps) => {
-  const handleClickViewAllPosts = () => {
-    trackEventToUmami("Home: View All Posts", "navigate");
-  };
-
   return (
     <Stack as="section" spacing={4}>
       <Heading size="lg" marginBottom={2}>
@@ -38,7 +33,6 @@ const PostsSection = ({ data }: PostsSectionProps) => {
             paddingX={0}
             variant="ghost"
             fontFamily="heading"
-            onClick={handleClickViewAllPosts}
           >
             view all posts
           </Button>

@@ -7,15 +7,16 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
  * - https://scotthelme.co.uk/content-security-policy-an-introduction/
  * - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
  */
+// script-src 'self' 'unsafe-inline' 'unsafe-eval' umami.sznm.dev;
+// default-src 'self';
+// style-src 'self' 'unsafe-inline';
+// img-src * blob: data: *.freepik.com;
+// media-src 'none';
+// connect-src *;
+// font-src 'self';
+
 const ContentSecurityPolicy = `
-  default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' umami.sznm.dev;
   frame-src giscus.app;
-  style-src 'self' 'unsafe-inline';
-  img-src * blob: data: *.freepik.com;
-  media-src 'none';
-  connect-src *;
-  font-src 'self';
 `;
 
 /**

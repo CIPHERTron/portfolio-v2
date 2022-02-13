@@ -6,7 +6,7 @@ type SkillChipProps = {
 };
 
 function SkillChip({ name, url }: SkillChipProps) {
-  const bg = useColorModeValue("#FFC0D3", "#3F3351");
+  const bg = useColorModeValue("#F6F6F6", "#22223b");
   const textColor = useColorModeValue("#1A202C", "#fff");
   return (
     <Box padding={2} backgroundColor={bg} borderRadius="md" cursor="pointer">

@@ -1,8 +1,17 @@
-import { Box, Heading, Text, Flex, Image } from "@chakra-ui/react";
-
-import Links from "../about/Links";
+import {
+  Box,
+  Heading,
+  Text,
+  Flex,
+  Image,
+  Button,
+  Link,
+  useColorModeValue,
+} from "@chakra-ui/react";
+import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
 const HeroSection = () => {
+  const nameColor = useColorModeValue("#000", "#fff");
   return (
     <Box height="90vh" alignItems="center" display="grid" width={["100%"]}>
       <Flex
@@ -20,13 +29,36 @@ const HeroSection = () => {
           marginTop={[8, 4]}
           marginBottom={[8, 4]}
         />
-        <Heading as="h1" size="xl" textAlign="center" paddingBottom={11}>
-          Hi, I&apos;m Pritish from India
+        <Heading
+          as="h1"
+          color="#808080"
+          size="xl"
+          textAlign="center"
+          paddingBottom={11}
+        >
+          Hi, I&apos;m{" "}
+          <Box color={nameColor} display="inline-block">
+            Pritish Samal
+          </Box>{" "}
+          from India
         </Heading>
         <Text textAlign="center" fontSize={["md", "xl"]}>
           Full Stack Developer and Cloud Enthusiast
         </Text>
-        <Links />
+        {/* <Links /> */}
+        <Link
+          mt={7}
+          isExternal
+          href="https://drive.google.com/file/d/1qTBwrCZ6U41dMrBcynNOB6VwBeOJxntP/view"
+        >
+          <Button
+            leftIcon={<FaExternalLinkSquareAlt />}
+            colorScheme="teal"
+            variant="outline"
+          >
+            Resume
+          </Button>
+        </Link>
       </Flex>
     </Box>
   );

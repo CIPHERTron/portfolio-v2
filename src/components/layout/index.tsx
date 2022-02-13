@@ -1,9 +1,12 @@
 import { Box, Stack, useColorModeValue } from "@chakra-ui/react";
 import type { ReactNode } from "react";
 
+import useMediaQuery from "../../hooks/useMediaQuery";
+
 import Footer from "./Footer";
 import Header from "./Header";
 import Meta from "./meta";
+import MobileNav from "./Navbar/MobileNav";
 import TabBar from "./TabBar";
 
 type LayoutProps = {
@@ -11,6 +14,7 @@ type LayoutProps = {
 };
 
 const Layout = ({ children }: LayoutProps) => {
+  const isMobileView = useMediaQuery("(max-width: 700px)");
   const backgroundColor = useColorModeValue("gray.50", "gray.800");
   const textColor = useColorModeValue("gray.900", "gray.200");
 
@@ -24,7 +28,8 @@ const Layout = ({ children }: LayoutProps) => {
       transition="0.4s ease-out"
     >
       <Meta />
-      <Header />
+      {isMobileView ? <MobileNav /> : <Header />}
+
       <Stack
         maxWidth={["100vw", "100vw", "85vw", "800px"]}
         position="relative"

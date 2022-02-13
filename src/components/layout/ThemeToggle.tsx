@@ -14,7 +14,7 @@ const ThemeToggle = () => {
 
   return (
     <Box>
-      <Tooltip label="theme toggle">
+      <Tooltip label="Theme Toggle">
         <IconButton
           aria-label="toggle theme mode"
           icon={toggleIcon}

@@ -10,8 +10,8 @@ function TechStack() {
       <Heading size="lg" marginBottom={2}>
         Tech Stack
       </Heading>
-      <Box mx={3} my={5}>
-        <Heading size="md" marginBottom={2} textDecoration="underline">
+      <Box mx={3} my={7}>
+        <Heading fontWeight="normal" color="#808080" size="md" marginBottom={2}>
           Languages
         </Heading>
         <SimpleGrid columns={[2, 4, 5]} spacing="10px">
@@ -29,7 +29,7 @@ function TechStack() {
       </Box>
 
       <Box mx={3} my={5}>
-        <Heading size="md" marginBottom={2} textDecoration="underline">
+        <Heading fontWeight="normal" color="#808080" size="md" marginBottom={2}>
           Tools & Technologies
         </Heading>
         <SimpleGrid columns={[2, 4, 5]} spacing="10px">

@@ -33,7 +33,6 @@ const TabContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   color: #5d6a84;
-  border-left: 2px solid #5d6a84;
   border-radius: 6px;
   margin-bottom: 10px;
 

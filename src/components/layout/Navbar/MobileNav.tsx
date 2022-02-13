@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { Box, Flex, Text, useColorMode } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import Link from "next/link";
@@ -30,42 +32,55 @@ const Container = styled.div`
 `;
 
 const NavItemsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 10vh;
-  height: 90vh;
-  width: 100%;
-
-  z-index: 1000;
+  .navItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10vh;
+    left: 100%;
+    height: 90vh;
+    width: 100%;
+    transition: left 10s ease !important;
+    z-index: 1000;
+  }
 
   .item {
     font-size: 24px;
     font-weight: bold;
     margin: 20px auto;
   }
+
+  .active {
+    left: 0%;
+  }
 `;
 
-const NavItems = () => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const NavItems = ({ isOpen, setIsOpen }: any) => {
   const { colorMode } = useColorMode();
   return (
-    <NavItemsWrapper
-      style={
-        colorMode === "light"
-          ? { backgroundColor: "#F6F6F6", color: "#1A202C" }
-          : { color: "#F6F6F6", backgroundColor: "#1A202C" }
-      }
-    >
-      {navigations.map((item) => {
-        return (
-          <Link key={item.label} href={item.href} passHref>
-            <span className="item">{item.label}</span>
-          </Link>
-        );
-      })}
-      <ThemeToggle />
+    <NavItemsWrapper>
+      <div
+        style={
+          colorMode === "light"
+            ? { backgroundColor: "#F6F6F6", color: "#1A202C" }
+            : { color: "#F6F6F6", backgroundColor: "#1A202C" }
+        }
+        className={`navItems ${isOpen ? "active" : ""}`}
+      >
+        {navigations.map((item) => {
+          return (
+            <Link key={item.label} href={item.href} passHref>
+              <span onClick={() => setIsOpen(!isOpen)} className="item">
+                {item.label}
+              </span>
+            </Link>
+          );
+        })}
+        <ThemeToggle />
+      </div>
     </NavItemsWrapper>
   );
 };
@@ -105,7 +120,7 @@ const MobileNav = () => {
         </Flex>
       </Box>
 
-      {isOpen && <NavItems />}
+      {isOpen && <NavItems isOpen={isOpen} setIsOpen={setIsOpen} />}
     </Container>
   );
 };

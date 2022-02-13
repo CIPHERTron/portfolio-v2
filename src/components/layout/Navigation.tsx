@@ -1,15 +1,12 @@
-import { IconButton, Tooltip } from "@chakra-ui/react";
+import { Box, Flex, Text, useColorMode } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import type { IconType } from "react-icons";
-import { FaFeatherAlt, FaHome, FaRocket, FaUser } from "react-icons/fa";
 
 type NavItemProps = {
   href: string;
   label: string;
-  icon: IconType;
 };
 
-const NavItem = ({ href, label, icon }: NavItemProps) => {
+const NavItem = ({ href, label }: NavItemProps) => {
   const router = useRouter();
 
   const handleClickNavigation = () => {
@@ -17,51 +14,63 @@ const NavItem = ({ href, label, icon }: NavItemProps) => {
   };
 
   return (
-    <Tooltip label={label}>
-      <IconButton
-        aria-label={label}
-        variant="ghost"
-        flexBasis="25%"
-        fontSize={["2xl", "md"]}
-        padding={0}
-        onClick={handleClickNavigation}
-      >
-        {icon({ style: { cursor: "pointer" } })}
-      </IconButton>
-    </Tooltip>
+    <Text
+      cursor="pointer"
+      margin="auto 32px"
+      fontWeight="bold"
+      onClick={handleClickNavigation}
+    >
+      {label}
+    </Text>
   );
 };
 
 const navigations: NavItemProps[] = [
   {
-    href: "/",
-    label: "Home",
-    icon: FaHome,
-  },
-  {
     href: "/projects",
     label: "Projects",
-    icon: FaRocket,
   },
   {
     href: "/blog",
     label: "Blog",
-    icon: FaFeatherAlt,
   },
   {
     href: "/about",
     label: "About",
-    icon: FaUser,
   },
 ];
 
 const Navigation = () => {
   return (
-    <>
+    <Flex display={["none", "none", "flex"]}>
       {navigations.map((navigation) => (
         <NavItem {...navigation} key={navigation.label} />
       ))}
-    </>
+    </Flex>
+  );
+};
+
+export const MNav = () => {
+  const { colorMode } = useColorMode();
+  return (
+    <Box
+      backgroundColor={
+        colorMode === "light"
+          ? "rgba(247, 250, 252, 0.8)"
+          : "rgba(26, 32, 44, 0.8)"
+      }
+    >
+      <Flex
+        display={["flex", "flex", "none"]}
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+      >
+        {navigations.map((navigation) => (
+          <NavItem {...navigation} key={navigation.label} />
+        ))}
+      </Flex>
+    </Box>
   );
 };
 

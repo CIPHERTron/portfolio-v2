@@ -1,11 +1,16 @@
-import { Box, Flex, Spacer, Text, useColorMode } from "@chakra-ui/react";
+import { Box, Flex, Text, useColorMode } from "@chakra-ui/react";
 import Link from "next/link";
+import { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 
 import Navigation from "./Navigation";
 import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const { colorMode } = useColorMode();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
     <Box
@@ -26,6 +31,7 @@ const Header = () => {
         maxWidth="800px"
         as="header"
         alignItems="center"
+        justifyContent="space-around"
       >
         <Link href="/" passHref>
           <Text
@@ -38,15 +44,16 @@ const Header = () => {
           </Text>
         </Link>
 
-        <Spacer />
+        <Navigation />
 
-        <Flex alignItems="center" gridGap={4}>
-          <Flex display={["none", "flex"]}>
-            <Navigation />
-          </Flex>
-
-          <ThemeToggle />
-        </Flex>
+        <ThemeToggle />
+        <Box
+          cursor="pointer"
+          display={{ base: "block", md: "none" }}
+          onClick={toggle}
+        >
+          {isOpen ? <FiX /> : <FiMenu />}
+        </Box>
       </Flex>
     </Box>
   );

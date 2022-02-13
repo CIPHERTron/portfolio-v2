@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
+import { useColorMode } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 const HamIcon = styled.div`
@@ -12,14 +13,13 @@ const HamIcon = styled.div`
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color: #ecf0f1;
     text-align: center;
   }
 
   .hamburger .line {
     width: 35px;
     height: 2px;
-    background-color: #ecf0f1;
+    background-color: #fff;
     display: block;
     margin: 8px auto;
     -webkit-transition: all 0.3s ease-in-out;
@@ -72,6 +72,7 @@ const HamIcon = styled.div`
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function HamMenu({ isOpen, setIsOpen }: any) {
+  const { colorMode } = useColorMode();
   return (
     <HamIcon>
       <div className="three col">
@@ -80,9 +81,30 @@ export default function HamMenu({ isOpen, setIsOpen }: any) {
           className={`hamburger ${isOpen ? "is-active" : ""}`}
           id="hamburger-6"
         >
-          <span className="line" />
-          <span className="line" />
-          <span className="line" />
+          <span
+            style={
+              colorMode === "dark"
+                ? { backgroundColor: "#ecf0f1" }
+                : { backgroundColor: "#1A202C" }
+            }
+            className="line"
+          />
+          <span
+            style={
+              colorMode === "dark"
+                ? { backgroundColor: "#ecf0f1" }
+                : { backgroundColor: "#1A202C" }
+            }
+            className="line"
+          />
+          <span
+            style={
+              colorMode === "dark"
+                ? { backgroundColor: "#ecf0f1" }
+                : { backgroundColor: "#1A202C" }
+            }
+            className="line"
+          />
         </div>
       </div>
     </HamIcon>

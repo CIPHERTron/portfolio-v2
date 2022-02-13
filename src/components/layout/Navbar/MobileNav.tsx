@@ -38,9 +38,6 @@ const NavItemsWrapper = styled.div`
   top: 10vh;
   height: 90vh;
   width: 100%;
-  background: #141e30;
-  background: -webkit-linear-gradient(to right, #243b55, #141e30);
-  background: linear-gradient(to right, #243b55, #141e30);
 
   z-index: 1000;
 
@@ -52,8 +49,15 @@ const NavItemsWrapper = styled.div`
 `;
 
 const NavItems = () => {
+  const { colorMode } = useColorMode();
   return (
-    <NavItemsWrapper>
+    <NavItemsWrapper
+      style={
+        colorMode === "light"
+          ? { backgroundColor: "#F6F6F6", color: "#1A202C" }
+          : { color: "#F6F6F6", backgroundColor: "#1A202C" }
+      }
+    >
       {navigations.map((item) => {
         return (
           <Link key={item.label} href={item.href} passHref>

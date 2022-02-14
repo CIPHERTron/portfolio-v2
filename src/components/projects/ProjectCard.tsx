@@ -8,6 +8,10 @@ import { FaLock, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const Container = styled.div`
   margin: 0 auto;
   margin-top: 7%;
+
+  @media (max-width: 500px) {
+    margin-top: 15%;
+  }
 `;
 
 const TabBar = styled.div`

@@ -1,4 +1,4 @@
-import { Box, Flex, Text, useColorMode } from "@chakra-ui/react";
+import { Flex, Text, useColorMode } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
 type NavItemProps = {

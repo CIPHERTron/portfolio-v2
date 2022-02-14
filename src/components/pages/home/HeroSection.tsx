@@ -42,8 +42,12 @@ const HeroSection = () => {
           </Box>{" "}
           from India
         </Heading>
-        <Text textAlign="center" fontSize={["md", "xl"]}>
-          Full Stack Developer and Cloud Enthusiast
+        <Text textAlign="center" fontWeight="bold" fontSize={["md", "xl"]}>
+          Full Stack Developer{" "}
+          <Box color="#808080" fontWeight="normal" display="inline-block">
+            and
+          </Box>{" "}
+          Cloud Enthusiast
         </Text>
         {/* <Links /> */}
         <Link

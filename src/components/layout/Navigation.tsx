@@ -8,6 +8,7 @@ type NavItemProps = {
 
 const NavItem = ({ href, label }: NavItemProps) => {
   const router = useRouter();
+  const { colorMode } = useColorMode();
 
   const handleClickNavigation = () => {
     router.push(href);
@@ -19,6 +20,8 @@ const NavItem = ({ href, label }: NavItemProps) => {
       margin="auto 32px"
       fontWeight="bold"
       onClick={handleClickNavigation}
+      color="#808080"
+      _hover={{ color: colorMode === "dark" ? "#fff" : "#000" }}
     >
       {label}
     </Text>
@@ -26,6 +29,10 @@ const NavItem = ({ href, label }: NavItemProps) => {
 };
 
 const navigations: NavItemProps[] = [
+  {
+    href: "/about",
+    label: "About",
+  },
   {
     href: "/projects",
     label: "Projects",
@@ -35,8 +42,8 @@ const navigations: NavItemProps[] = [
     label: "Blog",
   },
   {
-    href: "/about",
-    label: "About",
+    href: "/sessions",
+    label: "Sessions",
   },
 ];
 
@@ -47,30 +54,6 @@ const Navigation = () => {
         <NavItem {...navigation} key={navigation.label} />
       ))}
     </Flex>
-  );
-};
-
-export const MNav = () => {
-  const { colorMode } = useColorMode();
-  return (
-    <Box
-      backgroundColor={
-        colorMode === "light"
-          ? "rgba(247, 250, 252, 0.8)"
-          : "rgba(26, 32, 44, 0.8)"
-      }
-    >
-      <Flex
-        display={["flex", "flex", "none"]}
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-      >
-        {navigations.map((navigation) => (
-          <NavItem {...navigation} key={navigation.label} />
-        ))}
-      </Flex>
-    </Box>
   );
 };
 

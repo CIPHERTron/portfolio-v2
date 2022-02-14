@@ -42,7 +42,6 @@ const NavItemsWrapper = styled.div`
     left: 100%;
     height: 90vh;
     width: 100%;
-    transition: left 10s ease !important;
     z-index: 1000;
   }
 

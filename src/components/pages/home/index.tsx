@@ -7,13 +7,13 @@ import ProjectsSection from "./ProjectsSection";
 import TechStack from "./TechStack/TechStack";
 import type { HomeProps } from "./types";
 
-const Home = ({ allProjectsData, allPostsData }: HomeProps) => {
+const Home = ({ allPostsData }: HomeProps) => {
   return (
     <Box marginTop={-24}>
       <HeroSection />
       <Experience />
       <TechStack />
-      <ProjectsSection data={allProjectsData} />
+      <ProjectsSection />
       <PostsSection data={allPostsData} />
     </Box>
   );

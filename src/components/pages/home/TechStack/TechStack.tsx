@@ -35,7 +35,25 @@ function TechStack() {
         <SimpleGrid columns={[2, 4, 5]} spacing="10px">
           {skills.map(
             (skill) =>
-              skill.type !== "language" && (
+              skill.type === "technology" && (
+                <SkillChip
+                  key={skill.name}
+                  name={skill.name}
+                  url={skill.image}
+                />
+              )
+          )}
+        </SimpleGrid>
+      </Box>
+
+      <Box mx={3} my={5}>
+        <Heading fontWeight="normal" color="#808080" size="md" marginBottom={2}>
+          Platforms
+        </Heading>
+        <SimpleGrid columns={[2, 4, 5]} spacing="10px">
+          {skills.map(
+            (skill) =>
+              skill.type === "platform" && (
                 <SkillChip
                   key={skill.name}
                   name={skill.name}

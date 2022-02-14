@@ -51,7 +51,7 @@ export const skills = [
     name: "Node.js",
     image:
       "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/nodejs.svg",
-    type: "",
+    type: "technology",
   },
   {
     name: "Express",
@@ -69,13 +69,13 @@ export const skills = [
     name: "Docker",
     image:
       "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/docker.png",
-    type: "tool",
+    type: "technology",
   },
   {
     name: "Kubernetes",
     image:
       "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/kubernetes.svg",
-    type: "tool",
+    type: "technology",
   },
   {
     name: "MongoDB",
@@ -118,5 +118,29 @@ export const skills = [
     image:
       "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/postman.svg",
     type: "technology",
+  },
+  {
+    name: "Vercel",
+    image:
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/vercel.svg",
+    type: "platform",
+  },
+  {
+    name: "Netlify",
+    image:
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/netlify.svg",
+    type: "platform",
+  },
+  {
+    name: "Heroku",
+    image:
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/heroku.svg",
+    type: "platform",
+  },
+  {
+    name: "DigitalOcean",
+    image:
+      "https://hackandslash.blog/content/images/size/w1140/2020/10/DO_Logo_icon_blue-moded-4.png",
+    type: "platform",
   },
 ];

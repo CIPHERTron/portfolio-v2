@@ -11,9 +11,10 @@ const Footer = () => {
       </Flex>
 
       <Text align="center" fontSize={["xs", "sm"]}>
-        Built with <span style={{ marginRight: "5px" }}>💜</span> by{" "}
+        Built with{" "}
+        <span style={{ marginRight: "5px", marginLeft: "5px" }}>💜</span> by{" "}
         <Link
-          href="https://pritishsamal.tech"
+          href="https://pritishsamal.com"
           target="_blank"
           rel="noopener noreferrer"
         >

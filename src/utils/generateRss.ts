@@ -33,8 +33,8 @@ export const generateRss = async (
       const item: any = await generateRssItem(post);
       feed.item({
         title: item.title,
-        guid: `https://pritishsamal.tech/blog/${item.id}`,
-        url: `https://pritishsamal.tech/blog/${item.id}`,
+        guid: `https://pritishsamal.com/blog/${item.id}`,
+        url: `https://pritishsamal.com/blog/${item.id}`,
         date: item.date,
         description: "",
         author: "CIPHERTron",

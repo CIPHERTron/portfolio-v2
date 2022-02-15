@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 import type { DefaultSeoProps } from "next-seo";
 
 // https://github.com/garmeeh/next-seo#nextseo-options
@@ -8,7 +9,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
   description: "Pritish Samal's Portfolio Website | CIPHERTron",
   canonical: "https://sznm.dev",
   openGraph: {
-    url: "https://pritishsamal.tech",
+    url: "https://pritishsamal.com",
     title: "Pritish Samal",
     description: "Pritish Samal's Portfolio Website",
     images: [

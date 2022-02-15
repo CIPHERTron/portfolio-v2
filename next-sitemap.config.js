@@ -2,7 +2,7 @@
 
 /** @type {import('next-sitemap').IConfig} */
 const NextSitemapConfig = {
-  siteUrl: "https://pritishsamal.tech",
+  siteUrl: "https://pritishsamal.com",
   generateRobotsTxt: true,
 };
 

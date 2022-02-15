@@ -54,6 +54,7 @@ const WebsiteUrl = styled.div`
   display: flex;
   align-items: center;
   margin-left: -100px;
+  color: #fff;
 
   .icon {
     height: 12px;
@@ -107,6 +108,7 @@ const Description = styled.div`
   display: flex;
   align-items: center;
   padding: 10px 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 40px -20px;
 
   .info-icon {
     font-size: 30px;

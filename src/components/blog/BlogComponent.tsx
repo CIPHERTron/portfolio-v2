@@ -20,6 +20,7 @@ const BlogContainer = styled(Box)`
   height: fit-content;
   border-radius: 20px;
   padding: 30px 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   @media (max-width: 500px) {
     padding: 15px 20px;

@@ -43,11 +43,7 @@ const HeroSection = () => {
           from India
         </Heading>
         <Text textAlign="center" fontWeight="bold" fontSize={["md", "xl"]}>
-          Full Stack Developer{" "}
-          <Box color="#808080" fontWeight="normal" display="inline-block">
-            and
-          </Box>{" "}
-          Cloud Enthusiast
+          Full Stack Developer and Cloud Enthusiast
         </Text>
         {/* <Links /> */}
         <Link

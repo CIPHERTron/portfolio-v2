@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 export const projects = [
   {
     name: "HackNITR Hackathon",
@@ -5,7 +6,7 @@ export const projects = [
     github: "https://github.com/dscnitrourkela/project-oregano",
     demo: "https://hacknitr.netlify.app/",
     preview:
-      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/work/hacknitr3/hacknitr3.png",
+      "https://res.cloudinary.com/pritish007/image/upload/v1644919181/Personal%20Portfolio/hacknitr_c1znha.png",
     tech: ["Gatsby", "JavaScript", "Emotion"],
     featured: true,
   },
@@ -45,5 +46,59 @@ export const projects = [
       "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/work/standalone/grafana.png",
     tech: ["Express", "Prometheus", "Grafana", "Docker", "Docker Compose"],
     featured: true,
+  },
+  {
+    name: "FoodVerse",
+    desc: "FoodVerse is a cross platform food delivvery app built using React Native. Using this app, the user can check the restaurants and the dishes they offer, can order items, track the progress of their delivery.",
+    github: "https://github.com/CIPHERTron/foodverse",
+    demo: "https://youtu.be/WOKwn7W-qk4",
+    preview: "",
+    tech: ["JavaScript", "React Native", "React Navigation"],
+    featured: false,
+  },
+  {
+    name: "HackNITR 2.0",
+    desc: "Built the website for HackNITR 2.0 Hackathon using Next.js, Styled Components, Theme Ui and Hackclub theme. Deployed the website in vercel.",
+    github: "https://github.com/dscnitrourkela/project-kiwi-archive",
+    demo: "https://kiwi-personal.vercel.app",
+    preview: "",
+    tech: ["JavaScript", "Next.js", "Theme UI"],
+    featured: false,
+  },
+  {
+    name: "Portfolio Site v1",
+    desc: "Built the first version of my portfolio website using Next.js, TypeScript, Emotion and deployed it on Vercel.",
+    github: "https://github.com/CIPHERTron/portfolio",
+    demo: "https://ciphertron.vercel.app",
+    preview: "",
+    tech: ["TypeScript", "Next.js", "Emotion"],
+    featured: false,
+  },
+  {
+    name: "Project Osha",
+    desc: "OSHA is a one stop solution for all these problems. You can signup on our webapp as a doctor or a patient. While on the signup page, you can locate nearby hospitals and pharmaceuticals in emergency and make an emergency call as well.",
+    github: "https://github.com/CIPHERTron/project-osha",
+    demo: "https://youtu.be/WncnfWuffXA",
+    preview: "",
+    tech: ["React", "Material UI", "Firebase"],
+    featured: false,
+  },
+  {
+    name: "Football Store",
+    desc: "Amazon like E-Commerce site built using React, Material UI, Context API, Stripe API and Firebase. It uses Firestore to track cart details, Firebase Hosting and Cloud Functions for Stripe payments.",
+    github: "https://github.com/CIPHERTron/amazon-clone",
+    demo: "https://clone-2d395.web.app/",
+    preview: "",
+    tech: ["React", "Material UI", "Firebase", "Stripe"],
+    featured: false,
+  },
+  {
+    name: "Restaurant Admin Panel",
+    desc: "Admin Panel for the employees of a restaurant using React, Material UI, Express.js, and MongoDB. You can add orders, get realtime notifications, see status of dishes",
+    github: "https://youtu.be/1pkYROfJNJg",
+    demo: "https://youtu.be/1pkYROfJNJg",
+    preview: "",
+    tech: ["React", "Material UI", "Express", "MongoDB"],
+    featured: false,
   },
 ];

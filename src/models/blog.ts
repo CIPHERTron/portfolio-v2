@@ -8,6 +8,7 @@ enum MandatoryFieldKeys {
   type,
   cover,
   articleLink,
+  latest,
 }
 type MandatoryFieldsType = keyof typeof MandatoryFieldKeys;
 
@@ -27,4 +28,5 @@ export type BlogPostType = Record<MandatoryFieldsType, string> &
     description?: string;
     thumbnail?: string;
     tags?: string[];
+    latest: any;
   };

@@ -3,7 +3,9 @@ title: useReducer Hook to the rescue!
 date: "2022-02-06"
 legacyID: "usereducer-hook-to-the-rescue"
 thumbnail: "📘"
+description: "Have you ever felt the need of an easier way to manage complex state in your React application without having to install heavy dependencies? You've arrived at the right place. Let us talk about the useReducer hook..."
 published: true
+latest: true
 cover: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pm6023ow729zuo6exzas.png"
 articleLink: "https://dev.to/ciphertron/usereducer-hook-to-the-rescue-2j48"
 tags:

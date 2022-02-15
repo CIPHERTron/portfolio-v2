@@ -2,7 +2,8 @@ import { Box, Button, Grid, Heading, Stack } from "@chakra-ui/react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
-import BlogPostPreview from "components/blog/BlogPostPreview";
+// import BlogPostPreview from "components/blog/BlogPostPreview";
+import BlogComponent from "../../blog/BlogComponent";
 import type { BlogPostType } from "models/blog";
 
 export type PostsSectionProps = {
@@ -13,15 +14,15 @@ const PostsSection = ({ data }: PostsSectionProps) => {
   return (
     <Stack as="section" spacing={4}>
       <Heading size="lg" marginBottom={2}>
-        Recent Posts
+        Latest Post
       </Heading>
 
       <Grid gap={8}>
         {data
-          .filter((post) => post.published === true)
+          .filter((post) => post.latest === true)
           .slice(0, 2)
           .map((postData) => (
-            <BlogPostPreview postData={postData} key={postData.id} />
+            <BlogComponent postData={postData} key={postData.id} />
           ))}
       </Grid>
 
@@ -30,11 +31,11 @@ const PostsSection = ({ data }: PostsSectionProps) => {
           <Button
             as="a"
             rightIcon={<FaArrowRight />}
-            paddingX={0}
+            paddingX={1}
             variant="ghost"
             fontFamily="heading"
           >
-            view all posts
+            view more blogs
           </Button>
         </Link>
       </Box>

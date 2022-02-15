@@ -1,7 +1,7 @@
-import { Heading, Box, Text, Grid } from "@chakra-ui/react";
+import { Box, Grid, Heading, Text } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 
-import BlogPostPreview from "components/blog/BlogPostPreview";
+import BlogComponent from "components/blog/BlogComponent";
 import { baseUrl } from "constants/baseUrl";
 import { PSOgImage } from "utils/PSOgImage";
 
@@ -9,7 +9,7 @@ import type { BlogPostListProps } from "./types";
 
 const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
   const blogPosts = allPostsData.map((postData) => (
-    <BlogPostPreview postData={postData} key={postData.title} />
+    <BlogComponent postData={postData} key={postData.title} />
   ));
 
   return (
@@ -32,7 +32,10 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
         <Heading as="h1" size="xl" marginBottom={2}>
           Blog Posts
         </Heading>
-        <Text>Just some writings</Text>
+        <Text>
+          Lately I&apos;ve developed an interest in technical writing. Take
+          alook at some of my posts.
+        </Text>
       </Box>
 
       <Grid gap={16} marginY={12}>

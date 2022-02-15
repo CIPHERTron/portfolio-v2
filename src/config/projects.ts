@@ -48,6 +48,16 @@ export const projects = [
     featured: true,
   },
   {
+    name: "Weather Forecasting Site",
+    desc: "Built a completely dynamic weather forecasting site using OpenWeather API and Leaflet, as a part of the MLH Prep Program. Here, the user can search for weather condition of any place of the world and can see hourly and weekly forecasts.",
+    github: "https://github.com/MLH-Fellowship/prep-project-jan-2022",
+    demo: "https://mlh-prep-jan-22.netlify.app/",
+    preview:
+      "https://res.cloudinary.com/pritish007/image/upload/v1644961401/Personal%20Portfolio/Screenshot_2022-02-16_at_3.11.48_AM_d8xeyf.png",
+    tech: ["JavaScript", "React", "OpenWeather API", "MUI", "Leaflet"],
+    featured: true,
+  },
+  {
     name: "FoodVerse",
     desc: "FoodVerse is a cross platform food delivvery app built using React Native. Using this app, the user can check the restaurants and the dishes they offer, can order items, track the progress of their delivery.",
     github: "https://github.com/CIPHERTron/foodverse",

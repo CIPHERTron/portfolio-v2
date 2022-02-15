@@ -34,13 +34,6 @@ const BlogContainer = styled(Box)`
       display: none;
     }
   }
-
-  .funky-design {
-    height: 100px;
-    width: 100px;
-    background-color: #fff4ee;
-    border-radius: 50%;
-  }
 `;
 
 const TagWrapper = styled.p`
@@ -95,8 +88,6 @@ const BlogComponent = ({ postData }: BlogPreviewProps) => {
           <Tags key={item} mode={colorMode} tag={item} />
         ))}
       </div>
-
-      <span className="funky-design" />
     </BlogContainer>
   );
 };

@@ -4,6 +4,8 @@ date: "2021-06-30"
 legacyID: "beauty-of-poetry"
 thumbnail: "📘"
 published: true
+latest: false
+description: "Here, in this article, the word Poetry is not referred to as something related to English Literature, history, religion, or stuff. I'm primarily a JavaScript, React developer where the dependency management..."
 cover: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/63ddhrkgmy4f0hqbwaof.png"
 articleLink: "https://dev.to/ciphertron/beauty-of-poetry-1ne8"
 tags:

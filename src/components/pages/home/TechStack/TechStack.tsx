@@ -6,7 +6,7 @@ import SkillChip from "./SkillChip";
 
 function TechStack() {
   return (
-    <Box marginBottom={10}>
+    <Box marginBottom={10} marginTop="15%">
       <Heading size="lg" marginBottom={2}>
         Tech Stack
       </Heading>

@@ -78,6 +78,7 @@ const ProjectHeading = styled.h2`
   font-weight: bold;
   text-align: center;
   font-size: 36px;
+  margin-bottom: 22px;
 
   @media (max-width: 500px) {
     font-size: 32px;

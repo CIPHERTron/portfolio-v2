@@ -49,7 +49,7 @@ const HeroSection = () => {
         <Link
           mt={7}
           isExternal
-          href="https://drive.google.com/file/d/1qTBwrCZ6U41dMrBcynNOB6VwBeOJxntP/view"
+          href="https://drive.google.com/file/d/1C2mFir2jWEE0qNoH4sgW_dqnq-PDsn7j/view"
         >
           <Button
             leftIcon={<FaExternalLinkSquareAlt />}

@@ -7,7 +7,7 @@ const Meta = () => {
         rel="alternate"
         type="application/rss+xml"
         title="RSS feed for Pritish's blog posts"
-        href="https://pritishsamal.tech/rss.xml"
+        href="https://pritishsamal.com/rss.xml"
       />
     </Head>
   );

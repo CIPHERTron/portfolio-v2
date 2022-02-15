@@ -5,10 +5,8 @@ import ProjectCard from "components/projects/ProjectCard";
 
 function ProjectsSection() {
   return (
-    <Box marginBottom={10} mt={7}>
-      <Heading size="lg" marginBottom={2} marginTop={7}>
-        Featured Projects
-      </Heading>
+    <Box marginBottom={10} marginTop="15%">
+      <Heading size="lg">Featured Projects</Heading>
 
       {projects.map(
         (item) =>

@@ -13,7 +13,7 @@ export type PostsSectionProps = {
 const PostsSection = ({ data }: PostsSectionProps) => {
   return (
     <Stack as="section" spacing={4}>
-      <Heading size="lg" marginBottom={2}>
+      <Heading size="lg" mt="15%" marginBottom={2}>
         Latest Post
       </Heading>
 

@@ -23,8 +23,8 @@ const Layout = ({ children }: LayoutProps) => {
       backgroundColor={backgroundColor}
       color={textColor}
       minHeight="100vh"
-      paddingBottom={[160, 16]}
-      paddingTop={24}
+      pt={24}
+      pb={2}
       transition="0.4s ease-out"
     >
       <Meta />

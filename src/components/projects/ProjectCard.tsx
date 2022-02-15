@@ -87,7 +87,7 @@ const ProjectHeading = styled.h2`
 
 const PreviewImage = styled.img`
   height: 350px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   object-fit: cover;
   padding: 0px;
@@ -109,7 +109,7 @@ const Description = styled.div`
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 40px -20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   .info-icon {
     font-size: 30px;
@@ -203,21 +203,12 @@ function ProjectCard({
         }
       >
         <ProjectHeading>{name}</ProjectHeading>
-        <motion.div
-          whileHover={{
-            scale: 1.05,
-            transition: { duration: 2 },
-          }}
-          whileTap={{ scale: 0.9 }}
-          style={{ cursor: "pointer" }}
-        >
-          <PreviewImage src={preview} alt={name} />
-        </motion.div>
+        <PreviewImage src={preview} alt={name} />
         <Description
           style={
             colorMode === "dark"
               ? { backgroundColor: "#edf1ff", color: "#22223B" }
-              : { backgroundColor: "#22223B", color: "#edf1ff" }
+              : { backgroundColor: "#ade8f4", color: "#22223B" }
           }
         >
           <span className="info-icon">

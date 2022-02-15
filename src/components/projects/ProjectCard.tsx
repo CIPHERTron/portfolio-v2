@@ -1,7 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import { HStack, Button, Link, useColorMode } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import { FaLock, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 

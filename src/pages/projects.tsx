@@ -1,3 +1,3 @@
-import ProjectsSection from "components/pages/home/ProjectsSection";
+import { ProjectsPage } from "../components/pages/projects";
 
-export default ProjectsSection;
+export default ProjectsPage;

@@ -6,6 +6,7 @@ import PostsSection from "./PostsSection";
 import ProjectsSection from "./ProjectsSection";
 import TechStack from "./TechStack/TechStack";
 import type { HomeProps } from "./types";
+import VolunteerExperience from "./Volunteering/VolunteerExperience";
 
 const Home = ({ allPostsData }: HomeProps) => {
   return (
@@ -15,6 +16,7 @@ const Home = ({ allPostsData }: HomeProps) => {
       <TechStack />
       <ProjectsSection />
       <PostsSection data={allPostsData} />
+      <VolunteerExperience />
     </Box>
   );
 };

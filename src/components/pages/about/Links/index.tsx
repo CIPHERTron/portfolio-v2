@@ -10,11 +10,11 @@ import MotionLink from "./MotionLink";
 
 const Links = () => {
   return (
-    <MotionBox marginY={4} {...wrapperAnimationProps}>
+    <MotionBox mb={2} {...wrapperAnimationProps}>
       <MotionFlex
         wrap="wrap"
         gridGap={4}
-        marginTop={4}
+        marginTop={2}
         {...staggerAnimationProps}
       >
         {socialLinks.map((link) => (

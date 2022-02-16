@@ -35,6 +35,8 @@ const TabContainer = styled.div`
   color: #5d6a84;
   border-radius: 6px;
   margin-bottom: 10px;
+  border: none;
+  transition: all 0.5s ease-in-out;
 
   @media (max-width: 500px) {
     justify-content: center;

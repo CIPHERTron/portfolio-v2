@@ -35,7 +35,7 @@ const PostsSection = ({ data }: PostsSectionProps) => {
             variant="ghost"
             fontFamily="heading"
           >
-            view more blogs
+            view more posts
           </Button>
         </Link>
       </Box>

@@ -15,4 +15,8 @@ export const navigations = [
     href: "/about",
     label: "About",
   },
+  {
+    href: "/sessions",
+    label: "Sessions",
+  },
 ];

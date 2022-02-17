@@ -1,6 +1,6 @@
 export const experience = [
   {
-    org: "MLF Fellowship",
+    org: "MLH Fellowship",
     role: "MLH Prep Fellow",
     link: "https://fellowship.mlh.io/programs/prep",
     date: "January, 2021 - February, 2021",

@@ -243,7 +243,7 @@ function ProjectCard({
         <StackWrapper>
           {tech.map((item, idx) => (
             <span className="tech-item" key={idx}>
-              {item}
+              {`#${item}`}
             </span>
           ))}
         </StackWrapper>

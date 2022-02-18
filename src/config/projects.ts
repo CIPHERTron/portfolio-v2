@@ -17,14 +17,7 @@ export const projects = [
     demo: "https://kaagaz.org.in",
     preview:
       "https://res.cloudinary.com/pritish007/image/upload/v1644865967/Personal%20Portfolio/Projects/Screenshot_2022-02-15_at_12.42.02_AM_ug11wv.png",
-    tech: [
-      "Next.js",
-      "TypeScript",
-      "Emotion",
-      "Vercel",
-      "PWA",
-      "Google Analytics",
-    ],
+    tech: ["Next.js", "TypeScript", "Emotion", "PWA", "Google Analytics"],
     featured: true,
   },
   {

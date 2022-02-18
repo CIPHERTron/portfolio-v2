@@ -22,7 +22,6 @@ type SessionProps = {
 
 const Container = styled(Box)`
   height: fit-content;
-  max-height: fit-content;
   width: 100%;
   cursor: pointer;
   background-image: radial-gradient(
@@ -49,10 +48,8 @@ const Container = styled(Box)`
   }
 
   .poster {
-    object-fit: cover;
-
     img {
-      height: 350px;
+      height: 360px;
       width: 100%;
       object-fit: cover;
       border-radius: 15px 0 0 15px;

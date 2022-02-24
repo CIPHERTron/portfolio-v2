@@ -5,6 +5,7 @@ import styled from "@emotion/styled";
 
 const HamIcon = styled.div`
   display: inline-block;
+  margin-left: 14px;
   .col:first-of-type {
     margin-left: 0;
   }

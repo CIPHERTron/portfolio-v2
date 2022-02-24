@@ -78,7 +78,6 @@ const NavItems = ({ isOpen, setIsOpen }: any) => {
             </Link>
           );
         })}
-        <ThemeToggle />
       </div>
     </NavItemsWrapper>
   );
@@ -115,7 +114,10 @@ const MobileNav = () => {
           justifyContent="space-between"
         >
           <Brand />
-          <HamMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+          <Flex justifyContent="center" alignItems="center">
+            <ThemeToggle />
+            <HamMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+          </Flex>
         </Flex>
       </Box>
 

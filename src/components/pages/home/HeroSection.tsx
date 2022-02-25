@@ -46,11 +46,7 @@ const HeroSection = () => {
           Full Stack Developer and Cloud Enthusiast
         </Text>
         {/* <Links /> */}
-        <Link
-          mt={7}
-          isExternal
-          href="https://pritishsamal.com/resume.pdf"
-        >
+        <Link mt={7} isExternal href="https://pritishsamal.com/resume.pdf">
           <Button
             leftIcon={<FaExternalLinkSquareAlt />}
             colorScheme="teal"

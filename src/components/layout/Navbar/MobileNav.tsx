@@ -1,8 +1,10 @@
+/* eslint-disable no-nested-ternary */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { Box, Flex, Text, useColorMode } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 import ThemeToggle from "../ThemeToggle";
@@ -59,6 +61,8 @@ const NavItemsWrapper = styled.div`
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const NavItems = ({ isOpen, setIsOpen }: any) => {
   const { colorMode } = useColorMode();
+  const router = useRouter();
+
   return (
     <NavItemsWrapper>
       <div
@@ -72,7 +76,18 @@ const NavItems = ({ isOpen, setIsOpen }: any) => {
         {navigations.map((item) => {
           return (
             <Link key={item.label} href={item.href} passHref>
-              <span onClick={() => setIsOpen(!isOpen)} className="item">
+              <span
+                onClick={() => setIsOpen(!isOpen)}
+                className="item"
+                style={{
+                  color:
+                    router.pathname === `/${item.active}`
+                      ? "#808080"
+                      : colorMode === "dark"
+                      ? "#fff"
+                      : "#000",
+                }}
+              >
                 {item.label}
               </span>
             </Link>

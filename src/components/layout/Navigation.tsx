@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import { Flex, Text, useColorMode } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
@@ -20,7 +21,13 @@ const NavItem = ({ href, label }: NavItemProps) => {
       margin="auto 32px"
       fontWeight="bold"
       onClick={handleClickNavigation}
-      color="#808080"
+      color={
+        router.pathname === `/${label.toLowerCase()}`
+          ? colorMode === "dark"
+            ? "#fff"
+            : "#000"
+          : "#808080"
+      }
       _hover={{ color: colorMode === "dark" ? "#fff" : "#000" }}
     >
       {label}

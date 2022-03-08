@@ -1,4 +1,4 @@
-import { Heading } from "@chakra-ui/react";
+import { Heading, useColorModeValue } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { useState } from "react";
 
@@ -52,7 +52,8 @@ const TabContainer = styled.div`
 
 function Experience() {
   const [company, setCompany] = useState(experience[0]);
-  // const [active, setActive] = useState(experience[0].org);
+  const tabBg = useColorModeValue("#ade8f4", "#112240");
+  const tabColor = useColorModeValue("#000", "#fff");
 
   return (
     <>
@@ -66,8 +67,8 @@ function Experience() {
               style={
                 item.org === company.org
                   ? {
-                      backgroundColor: "#112240",
-                      color: "#fff",
+                      backgroundColor: tabBg,
+                      color: tabColor,
                       border: "2px solid #5d6a84",
                     }
                   : {}

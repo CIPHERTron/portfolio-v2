@@ -8,12 +8,26 @@ import {
   Link,
   useColorModeValue,
 } from "@chakra-ui/react";
+import styled from "@emotion/styled";
 import { FaExternalLinkSquareAlt } from "react-icons/fa";
+
+const Container = styled(Box)`
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+`;
 
 const HeroSection = () => {
   const nameColor = useColorModeValue("#000", "#fff");
+
   return (
-    <Box height="90vh" alignItems="center" display="grid" width={["100%"]}>
+    <Container
+      height="90vh"
+      alignItems="center"
+      display="grid"
+      width={["100%"]}
+    >
       <Flex
         align="center"
         justify="center"
@@ -24,7 +38,7 @@ const HeroSection = () => {
         <Image
           borderRadius="full"
           boxSize="150px"
-          src="https://avatars.githubusercontent.com/u/56754747"
+          src="https://res.cloudinary.com/pritish007/image/upload/v1646769423/Personal%20Portfolio/Pritish_a1iyco.jpg"
           alt="Pritish Samal"
           marginTop={[8, 4]}
           marginBottom={[8, 4]}
@@ -45,18 +59,22 @@ const HeroSection = () => {
         <Text textAlign="center" fontWeight="bold" fontSize={["md", "xl"]}>
           Full Stack Developer and Cloud Enthusiast
         </Text>
-        {/* <Links /> */}
-        <Link mt={7} isExternal href="https://pritishsamal.com/resume.pdf">
+        <Link
+          style={{ textDecoration: "none" }}
+          mt={7}
+          isExternal
+          href="https://pritishsamal.com/resume.pdf"
+        >
           <Button
             leftIcon={<FaExternalLinkSquareAlt />}
             colorScheme="teal"
-            variant="outline"
+            variant="solid"
           >
             Resume
           </Button>
         </Link>
       </Flex>
-    </Box>
+    </Container>
   );
 };
 

@@ -7,6 +7,10 @@ import { FaLock, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const Container = styled.div`
   margin: 0 auto;
   margin-top: 7%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   @media (max-width: 500px) {
     margin-top: 15%;
@@ -218,7 +222,7 @@ function ProjectCard({
 
         <IconsWrapper>
           <HStack>
-            <Link href={github} isExternal>
+            <Link style={{ textDecoration: "none" }} href={github} isExternal>
               <Button
                 colorScheme="facebook"
                 leftIcon={<FaGithub />}
@@ -228,7 +232,7 @@ function ProjectCard({
               </Button>
             </Link>
 
-            <Link href={demo} isExternal>
+            <Link style={{ textDecoration: "none" }} href={demo} isExternal>
               <Button
                 colorScheme="facebook"
                 leftIcon={<FaExternalLinkAlt />}

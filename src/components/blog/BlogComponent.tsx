@@ -21,6 +21,10 @@ const BlogContainer = styled(Box)`
   border-radius: 20px;
   padding: 30px 40px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   @media (max-width: 500px) {
     padding: 15px 20px;
@@ -76,7 +80,7 @@ const BlogComponent = ({ postData }: BlogPreviewProps) => {
         <Button
           rightIcon={<FaArrowRight />}
           colorScheme="linkedin"
-          variant="outline"
+          variant="solid"
           mt={5}
         >
           Read More

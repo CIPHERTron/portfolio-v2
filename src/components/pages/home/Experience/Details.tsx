@@ -18,6 +18,13 @@ type CompanyProps = {
   content: Array<string>;
 };
 
+const Container = styled(Box)`
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+`;
+
 const Role = styled.h2`
   font-family: Catamaran, sans-serif;
   font-size: 20px;
@@ -60,7 +67,7 @@ const Org = styled.h2`
 
 const Details = ({ ...company }: CompanyProps) => {
   return (
-    <Box>
+    <Container>
       <Flex justifyContent="flex-start" alignItems="center">
         <Role>{company.role}</Role>
         <Link href={company.link}>
@@ -78,7 +85,7 @@ const Details = ({ ...company }: CompanyProps) => {
           );
         })}
       </List>
-    </Box>
+    </Container>
   );
 };
 

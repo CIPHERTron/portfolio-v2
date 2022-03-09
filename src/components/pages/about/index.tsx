@@ -1,3 +1,4 @@
+import { Divider } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 
 import { baseUrl } from "constants/baseUrl";
@@ -5,6 +6,7 @@ import { baseUrl } from "constants/baseUrl";
 import Content from "./Content";
 import HeadSection from "./HeadSection";
 import Links from "./Links";
+import Service from "./Service";
 
 const About = () => {
   return (
@@ -21,6 +23,8 @@ const About = () => {
       <HeadSection />
       <Content />
       <Links />
+      <Divider my={7} />
+      <Service />
     </>
   );
 };

@@ -1,12 +1,12 @@
 import type { BoxProps } from "@chakra-ui/react";
-import { Heading, Text } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 
 import MotionBox from "components/motion/MotionBox";
 
 const textProps: BoxProps = {
   marginY: 4,
-  fontSize: [18, 22],
-  textAlign: "justify",
+  fontSize: [18, 20],
+  textAlign: "left",
 };
 
 const Content = () => {
@@ -19,13 +19,11 @@ const Content = () => {
       initial="before"
       animate="after"
     >
-      <Heading size="lg">👋 Hi, how are you?</Heading>
-
       <Text {...textProps}>
-        Hello! This is Pritish Samal, a prefinal year student from National
-        Institute of Technology, Rourkela 🇮🇳 majoring in Ceramic Engineering.
-        I&apos;m a Full Stack Developer having experience in MERN Stack, Flask
-        and frameworks like Nextjs & Gatsby. I&apos;m also a huge cloud &
+        Pritish this side, a junior year student from National Institute of
+        Technology, Rourkela (🇮🇳) majoring in Ceramic Engineering. I&apos;m a
+        Full Stack Developer having experience in MERN Stack, Flask and
+        frameworks like Nextjs & Gatsby. I&apos;m also a huge cloud &
         open-source enthusiast who believes in the power of community. Writing
         clean code is and will always be a top priority for me.
       </Text>

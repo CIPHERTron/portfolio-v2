@@ -1,4 +1,26 @@
 export const experience = [
+  // {
+  //   org: "BharatPe",
+  //   role: "SDE Intern",
+  //   link: "https://bharatpe.com/",
+  //   date: "May, 2022 - Present",
+  //   content: [
+  //     "",
+  //     "Reviewed multiple pull requests as well as contributor proposals for the Migration of the Journal Policy Tracker project to Express and GraphQL.",
+  //     "In addition to working on the Journal Policy Tracker project, also mentored the selected student, supervised code quality, and consulted product ideation, architecture, and design.",
+  //   ],
+  // },
+  {
+    org: "Google Summer of Code",
+    role: "Org. Mentor",
+    link: "https://summerofcode.withgoogle.com/programs/2022/organizations/open-bioinformatics-foundation-obf",
+    date: "May, 2022 - Present",
+    content: [
+      "Got invited as a GSoC mentor for the Open Bioinformatics Foundation to foster the opensource culture and help beginners get started with contributing to open-source.",
+      "Reviewed multiple pull requests as well as contributor proposals for the Migration of the Journal Policy Tracker project to Express and GraphQL over a duration of 3 months",
+      "In addition to working on the Journal Policy Tracker project, also mentored the selected student, supervised code quality, and consulted product ideation, architecture, and design.",
+    ],
+  },
   {
     org: "MLH Fellowship",
     role: "MLH Prep Fellow",

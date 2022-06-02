@@ -1,15 +1,15 @@
 export const experience = [
-  // {
-  //   org: "BharatPe",
-  //   role: "SDE Intern",
-  //   link: "https://bharatpe.com/",
-  //   date: "May, 2022 - Present",
-  //   content: [
-  //     "",
-  //     "Reviewed multiple pull requests as well as contributor proposals for the Migration of the Journal Policy Tracker project to Express and GraphQL.",
-  //     "In addition to working on the Journal Policy Tracker project, also mentored the selected student, supervised code quality, and consulted product ideation, architecture, and design.",
-  //   ],
-  // },
+  {
+    org: "BharatPe India",
+    role: "SDE Intern",
+    link: "https://bharatpe.com/",
+    date: "May, 2022 - Present",
+    content: [
+      "Working as a front-end developer intern at BharatPe where I help build reusable components & add new features to the Unity Small Finance Bank (recently acquired by BharatPe).",
+      "Also worked on the core component libraries used by BharatPe for building their products i.e. Bharat UI and Utileo using React JS & TypeScript.",
+      "In normal working days, participated in the daily status meetings on a regular basis and collaborated with the team of engineers and designers.",
+    ],
+  },
   {
     org: "Google Summer of Code",
     role: "Org. Mentor",
@@ -65,15 +65,15 @@ export const experience = [
       "Attended weekly standups with my mentor as well as discussed and tweaked the database design to make it more scalable.",
     ],
   },
-  {
-    org: "Humaps",
-    role: "Freelance Developer",
-    link: "https://humaps.in",
-    date: "November, 2020 - December, 2020",
-    content: [
-      "Worked on bulding a highly scalable & responsive admin dashboard for an organization having more than 30 employees. Used React & Material UI for the frontend and Express, Mongo DB for the backend.",
-      "Built several functionalities starting from Auth0 based authentication, order booking system, realtime notification, statistics in-terms of graphical representation and many more.",
-      "Finally, used concurrently package to spin both the client and server with a single command and deployed it to heroku.",
-    ],
-  },
+  // {
+  //   org: "Humaps",
+  //   role: "Freelance Developer",
+  //   link: "https://humaps.in",
+  //   date: "November, 2020 - December, 2020",
+  //   content: [
+  //     "Worked on bulding a highly scalable & responsive admin dashboard for an organization having more than 30 employees. Used React & Material UI for the frontend and Express, Mongo DB for the backend.",
+  //     "Built several functionalities starting from Auth0 based authentication, order booking system, realtime notification, statistics in-terms of graphical representation and many more.",
+  //     "Finally, used concurrently package to spin both the client and server with a single command and deployed it to heroku.",
+  //   ],
+  // },
 ];

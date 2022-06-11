@@ -29,7 +29,7 @@ export const sessions = [
       "https://www.canva.com/design/DAE2VDZ65bg/8kMgM8TR4SOSCuuOtZewkg/view",
   },
   {
-    title: "The LFX Mentorship Program",
+    title: "LFX Mentorship Program",
     date: "11 February, 2022",
     image:
       "https://res.cloudinary.com/pritish007/image/upload/v1645039839/Personal%20Portfolio/Sessions/codxcrypt_jucvcc.jpg",

@@ -1,5 +1,14 @@
 export const sessions = [
   {
+    title: "All about LFX Mentorship",
+    date: "9 June, 2022",
+    image:
+      "https://res.cloudinary.com/pritish007/image/upload/v1654950223/Personal%20Portfolio/Sessions/lfxsession_tfxoap.jpg",
+    desc: "This session was organized by the Community Classroom where we talked about the LFX Mentorship Program by the Linux Foundation, the application procedure, eligibility criteria and some tips & tricks for applicants. We also had an AMA session at the end to clear the genral queries of students.",
+    rec: "https://youtu.be/YhivM-V_Pgk",
+    slides: "https://lfx.linuxfoundation.org/tools/mentorship/",
+  },
+  {
     title: "Introduction to Open Source",
     date: "11 February, 2022",
     image:

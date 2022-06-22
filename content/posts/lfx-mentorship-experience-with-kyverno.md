@@ -93,19 +93,19 @@ Thus, I got a rejection mail from LFX for the project idea under Chaos Mesh. But
   - You can find instructions on how to run kyverno in development mode [here](https://github.com/kyverno/kyverno/wiki/Running-in-development-mode)
   - Suppose we have the policy definition in `addQuota.yaml` file. Let's apply it to the cluster:
 
-  ```
+  ```bash
   kubectl apply -f addQuota.yaml
   ```
 
   - Now, let's create a demo namespace
 
-  ```
+  ```bash
   kubectl create ns demo
   ```
 
   - Now, search for the resources listed in `addQuota.yaml` that are meant to be generated (here, `limitranges` and `resourcequotas`)
 
-  ```
+  ```bash
   kubectl get limitranges --all-namespaces
 
   kubectl get resourcequotas --all-namespaces

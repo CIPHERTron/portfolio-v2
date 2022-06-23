@@ -15,7 +15,7 @@ tags:
   - Go
 ---
 
-## _List of content:_
+## Table of contents:
 
 - What is LFX Mentorship program?
 - Getting into LFX Mentorship

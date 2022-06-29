@@ -1,27 +1,21 @@
-import {
-  Box,
-  IconButton,
-  Tooltip,
-  useColorMode,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Button, useColorMode } from "@chakra-ui/react";
 import { RiMoonFill, RiSunFill } from "react-icons/ri";
 
 const ThemeToggle = () => {
-  const { toggleColorMode } = useColorMode();
-
-  const toggleIcon = useColorModeValue(<RiMoonFill />, <RiSunFill />);
+  const { toggleColorMode, colorMode } = useColorMode();
 
   return (
     <Box>
-      <Tooltip label="Theme Toggle">
-        <IconButton
-          aria-label="toggle theme mode"
-          icon={toggleIcon}
-          onClick={toggleColorMode}
-          backgroundColor="transparent"
-        />
-      </Tooltip>
+      <Button
+        leftIcon={colorMode === "light" ? <RiMoonFill /> : <RiSunFill />}
+        colorScheme="gray"
+        variant="solid"
+        size="sm"
+        borderRadius="8px"
+        onClick={toggleColorMode}
+      >
+        {colorMode === "dark" ? "Light Mode" : "Dark Mode"}
+      </Button>
     </Box>
   );
 };

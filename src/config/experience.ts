@@ -14,7 +14,7 @@ export const experience = [
     org: "Google Summer of Code",
     role: "Org. Mentor",
     link: "https://summerofcode.withgoogle.com/programs/2022/organizations/open-bioinformatics-foundation-obf",
-    date: "May, 2022 - Present",
+    date: "May, 2022 - Aug, 2022",
     content: [
       "Got invited as a GSoC mentor for the Open Bioinformatics Foundation to foster the opensource culture and help beginners get started with contributing to open-source.",
       "Reviewed multiple pull requests as well as contributor proposals for the Migration of the Journal Policy Tracker project to Express and GraphQL over a duration of 3 months",

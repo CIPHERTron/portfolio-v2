@@ -29,7 +29,7 @@ export const experience = [
     content: [
       "A 3 week intensive program, collaborated with 15+ students from 4 different countries. Built out a portfolio of projects, experimented with new technologies during a short, impactful hackathon sprint.",
       "Collaborated with the team with delegating tasks, conducting daily stand-ups, and reviewing PRs.",
-      "In addition to working on projects employing a variety of technologies such as Javascript, React, Jekyll, delivered a Show and Tell lecture on open-source at Kubernetes.",
+      "In addition to working on projects, a variety of technologies such as Javascript, React, Jekyll, delivered a Show and Tell lecture on open-source at Kubernetes.",
     ],
   },
   {

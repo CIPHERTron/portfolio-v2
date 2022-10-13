@@ -72,7 +72,7 @@ export const experience = [
   //   date: "November, 2020 - December, 2020",
   //   content: [
   //     "Worked on a highly scalable & responsive admin dashboard for an organization having more than 30 employees. Used React & Material UI for the frontend and Express, Mongo DB for the backend.",
-  //     "Built several functionalities starting from Auth0 based authentication, order booking system, realtime notification, statistics in-terms of graphical representation and many more.",
+  //     "Built several functionalities starting from Auth0 authentication, order booking system, realtime notification, statistics in-terms of graphical representation and many more.",
   //     "Finally, used concurrently package to spin both the client and server with a single command and deployed it to heroku.",
   //   ],
   // },

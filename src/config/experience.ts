@@ -67,7 +67,7 @@ export const experience = [
   },
   // {
   //   org: "Humaps inc.",
-  //   role: "Freelance Developer",
+  //   role: "Freelance Developer - Full Stack",
   //   link: "https://humaps.in",
   //   date: "November, 2020 - December, 2020",
   //   content: [

@@ -1,15 +1,16 @@
+import { FaExternalLinkSquareAlt } from "react-icons/fa";
+
 import {
   Box,
-  Heading,
-  Text,
-  Flex,
-  Image,
   Button,
+  Flex,
+  Heading,
+  Image,
   Link,
+  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
-import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
 const Container = styled(Box)`
   -webkit-user-select: none;
@@ -37,7 +38,7 @@ const HeroSection = () => {
       >
         <Image
           borderRadius="full"
-          boxSize="150px"
+          boxSize="250px"
           src="https://res.cloudinary.com/pritish007/image/upload/v1647859319/Personal%20Portfolio/Pritish_1_clsbba.jpg"
           alt="Pritish Samal"
           marginTop={[8, 4]}

@@ -5,7 +5,7 @@ title: Uses
 ### Computer
 
 - MacBook M1 Air(14")
-- LG Monitor
+- HP M24f 23.8-Inch(60.45cm) Eye Safe Certified Full HD 1920 x 1080 Pixels Monitor
 - Logitech M337 Truly Wireless Mouse
 - Targus KB55 Truly Wireless Keyboard
 
@@ -17,9 +17,9 @@ title: Uses
 
 ### Audio / Video
 
-- Apple Airpods
-- CosmicByte Headphone
-- Samsung Galaxy A51
+- Apple AirPods
+- Boat Rockerz 450 pro
+- Apple iPhone 13
 
 ### Music
 
@@ -29,3 +29,4 @@ title: Uses
 
 - MI Smartband 5
 - MI 20000 mAh powerbank
+- Samsung Portable SSD T7 1TB

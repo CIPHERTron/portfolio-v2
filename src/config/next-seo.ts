@@ -15,7 +15,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
     images: [
       {
         url: "https://res.cloudinary.com/pritish007/image/upload/v1644348821/Personal%20Portfolio/Favicon_nckr8a.png",
-        alt: "sznm.dev og-image",
+        alt: "pritishsamal.com og-image",
       },
     ],
     site_name: "Pritish Samal",

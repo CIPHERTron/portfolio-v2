@@ -7,7 +7,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
   titleTemplate: "%s | CIPHERTron",
   defaultTitle: "CIPHERTron | Pritish Samal",
   description: "Pritish Samal's Portfolio Website | CIPHERTron",
-  canonical: "https://sznm.dev",
+  canonical: "https://pritishsamal.com",
   openGraph: {
     url: "https://pritishsamal.com",
     title: "Pritish Samal",

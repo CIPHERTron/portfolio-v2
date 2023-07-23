@@ -317,3 +317,12 @@ Go has proven itself to be a powerful and efficient programming language for bui
 In this blog, we've only scratched the surface of what Go has to offer. As you delve deeper into the language, you'll discover its vast ecosystem of libraries, frameworks, and tools that further simplify and enhance the development experience.
 
 If you're looking for a language that strikes a balance between simplicity and power, Go is undoubtedly a language worth exploring. Whether you're a seasoned developer or just starting your programming journey, Go's approachable syntax and performance capabilities make it an excellent addition to your programming toolkit.
+
+## Resources to learn Go
+- [Go's official documentation](https://go.dev/doc/effective_go)
+- [Go By Example](https://gobyexample.com/)
+- [Go Web Examples](https://gowebexamples.com/)
+- [Gophercises by Jon Calhoun](https://gophercises.com/)
+- [50 Shades of Go by Kyle Quest](https://golang50shad.es/)
+- [Practical Go by Dave Cheney](https://dave.cheney.net/practical-go)
+- [Kavya Joshi Blogs](https://kavyajoshi.me/)

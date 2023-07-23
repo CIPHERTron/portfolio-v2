@@ -326,3 +326,4 @@ If you're looking for a language that strikes a balance between simplicity and p
 - [50 Shades of Go by Kyle Quest](https://golang50shad.es/)
 - [Practical Go by Dave Cheney](https://dave.cheney.net/practical-go)
 - [Kavya Joshi Blogs](https://kavyajoshi.me/)
+- [Mini Resources list by Kasia](https://dev.to/kasia/mini-resource-list-for-golang-m87)

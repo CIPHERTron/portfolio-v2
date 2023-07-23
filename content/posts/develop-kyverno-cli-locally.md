@@ -5,7 +5,7 @@ legacyID: "develop-kyverno-cli-locally"
 thumbnail: "📘"
 description: "The Kyverno Command Line Interface (CLI) is designed to validate and test policy behavior to resources prior to adding them to a cluster..."
 published: true
-latest: true
+latest: false
 cover: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ff2p50e2f7h1f2rdhz73.png"
 articleLink: "https://github.com/kyverno/kyverno/wiki/Running-in-development-mode#develop-kyverno-cli-locally"
 tags:

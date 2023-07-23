@@ -3,7 +3,7 @@ export const experience = [
     org: "BharatPe India",
     role: "SDE Intern",
     link: "https://bharatpe.com/",
-    date: "May, 2022 - Present",
+    date: "May, 2022 - Feb, 2023",
     content: [
       "Working as a front-end developer intern at BharatPe where I help build reusable components & add new features to the Unity Small Finance Bank (recently acquired by BharatPe).",
       "Also worked on the core component libraries used by BharatPe for building their products i.e. Bharat UI and Utileo using React JS & TypeScript.",

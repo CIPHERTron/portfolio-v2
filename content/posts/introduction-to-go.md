@@ -7,7 +7,7 @@ description: "In the ever-evolving landscape of software development, programmin
 published: true
 latest: true
 cover: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hc1uaz1tvuq53qq0obl8.png"
-articleLink: ""
+articleLink: "https://dev.to/ciphertron/introduction-to-go-a-powerful-and-efficient-programming-language-5bej"
 tags:
   - Golang
   - Cloud

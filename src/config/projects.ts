@@ -17,7 +17,7 @@ export const projects = [
     demo: "https://nitrutsav.live/",
     preview:
       "https://res.cloudinary.com/pritish007/image/upload/v1690437004/Personal%20Portfolio/Projects/Screenshot_2023-07-27_at_11.19.42_AM_aie3rv.png",
-    tech: ["Next", "TypeScript", "Tailwind CSS"],
+    tech: ["Next", "TypeScript", "GraphQL", "Tailwind CSS"],
     featured: true,
   },
   {

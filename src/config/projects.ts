@@ -1,6 +1,26 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 export const projects = [
   {
+    name: "SQL Editor",
+    desc: "SQL Editor aims to provide users with a seamless and user-friendly platform for executing SQL queries, displaying query results with pagination, offering search functionality, maintaining a query history log, and supporting the export of results in CSV or JSON formats. The application will also showcase the execution time of queries and provide a list of available tables in the sidebar for easy reference.",
+    github: "https://github.com/CIPHERTron/sql-editor",
+    demo: "https://online-sql-editor.vercel.app/",
+    preview:
+      "https://res.cloudinary.com/pritish007/image/upload/v1690436755/Personal%20Portfolio/Projects/Screenshot_2023-07-27_at_12.40.37_AM_ufnwex.png",
+    tech: ["React", "Material UI", "React Ace"],
+    featured: true,
+  },
+  {
+    name: "NITRUtsav NIT Rourkela",
+    desc: "NITRUtsav is the literary and cultural festival of NIT Rourkela. Spearheaded a developer team to create a highly interactive website for the cultural fest of NIT Rourkela which had close to 1 million hits. Developed the frontend using React, TypeScript, Styled Components, and Twin Macro whereas used Express, TypeScript, GraphQL, Prisma, & MongoDB for the backend & then deployed it on Digital Ocean.",
+    github: "https://github.com/dscnitrourkela/project-tart",
+    demo: "https://nitrutsav.live/",
+    preview:
+      "https://res.cloudinary.com/pritish007/image/upload/v1690437004/Personal%20Portfolio/Projects/Screenshot_2023-07-27_at_11.19.42_AM_aie3rv.png",
+    tech: ["Next", "TypeScript", "Tailwind CSS"],
+    featured: true,
+  },
+  {
     name: "HackNITR Hackathon",
     desc: "HackNITR is one of the largest student-run hackathons in the eastern India. I lead the technical team and developed the official HackNITR hackathon website with a focus on high performance, responsiveness, and SEO.",
     github: "https://github.com/dscnitrourkela/project-oregano",
@@ -28,6 +48,16 @@ export const projects = [
     preview:
       "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/work/frame/Frame.png",
     tech: ["React", "TypeScript", "CSS", "Material UI"],
+    featured: true,
+  },
+  {
+    name: "Kafka Streamer",
+    desc: "Kafka Streamer is a microservice that uses Kafka to listens to an event involving order creation and then insert the product orders to a Postgres database. The database operations are carried out using a DB sink connector which reads product_orders topic and writes the data to a table called orders in Postgres DB.",
+    github: "https://github.com/CIPHERTron/kafka-streamer",
+    demo: "https://github.com/CIPHERTron/kafka-streamer/blob/main/README.md",
+    preview:
+      "https://raw.githubusercontent.com/CIPHERTron/kafka-streamer/main/images/architecture_diagram.png",
+    tech: ["Flask", "Docker", "Kubernetes", "Kafka", "Postgres"],
     featured: true,
   },
   {

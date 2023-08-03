@@ -1,11 +1,11 @@
 export const sessions = [
   {
-    title: "Open Source Program No One Told You",
+    title: "LFX Mentorship",
     date: "24 January 2023",
     image:
       "https://res.cloudinary.com/pritish007/image/upload/v1691065873/Personal%20Portfolio/Sessions/lfx-aniket.jpg",
-    desc: "OpenSource is life-changing for a lot of folks. Companies are hiring OpenSource Engineers. LFX Mentorship is for folks starting out in OpenSource and interested in exploring the modern tech niches companies are looking forward to. The infamous Google Summer of Code is a well-known program for folks starting out in OpenSource. But is it the best program? Watch to know.",
-    rec: "https://youtu.be/YhivM-V_Pgk",
+    desc: "OpenSource is life-changing for a lot of folks. Companies are hiring OpenSource Engineers. LFX Mentorship is for folks starting out in OpenSource and interested in exploring the modern tech niches companies are looking forward to. The infamous Google Summer of Code is a well-known program...",
+    rec: "https://youtu.be/o0V7Z6UQMBY",
     slides: "https://www.youtube.com/@palaniket",
   },
   {

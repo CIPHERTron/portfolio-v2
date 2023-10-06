@@ -1,5 +1,16 @@
 export const experience = [
   {
+    org: "Harness.io",
+    role: "SDE Intern",
+    link: "https://harness.io/",
+    date: "Aug, 2023 - Present",
+    content: [
+      "Collaborated with a multi-disciplinary team of software engineers, user interface designers, and product managers from different countries in the Adoption Engineering team to automate workflows and ship features.",
+      "Implemented automation for extracting customer details from Jira and retrieving their ACV & license details from Salesforce. Devised and implemented a customized trigger webhook using SEI & JS to notify the details on Slack.",
+      "Attended daily status meetings & worked on several other automations such as License Renewal & License Utilization Alerts, Issue Inactivity Alerts, etc using Harness's SEI module and JavaScript",
+    ],
+  },
+  {
     org: "BharatPe India",
     role: "SDE Intern",
     link: "https://bharatpe.com/",

@@ -15,11 +15,23 @@ tags:
   - Language
 ---
 
+## Resources to learn Go
+- [Go's official documentation](https://go.dev/doc/effective_go)
+- [Go By Example](https://gobyexample.com/)
+- [Go Web Examples](https://gowebexamples.com/)
+- [Gophercises by Jon Calhoun](https://gophercises.com/)
+- [50 Shades of Go by Kyle Quest](https://golang50shad.es/)
+- [Practical Go by Dave Cheney](https://dave.cheney.net/practical-go)
+- [Kavya Joshi Blogs](https://kavyajoshi.me/)
+- [Mini Resources list by Kasia](https://dev.to/kasia/mini-resource-list-for-golang-m87)
+- [Notes by Pritish](https://pritish007.notion.site/Golang-Minutes-4410500d76744b3aaa3aefb703e3c649)
+
+
 ## Introduction
 In the ever-evolving landscape of software development, programming languages play a vital role in shaping the way we build and deploy applications. Among the myriad of programming languages available, Go, also known as Golang, has gained significant popularity due to its simplicity, performance, and robustness. Created by Google engineers Robert Griesemer, Rob Pike, and Ken Thompson, Go was first released in 2009 and has since become a go-to choice for developers across various domains. In this blog, we will explore the fundamental features, strengths, and use cases of Go, highlighting why it has captured the hearts of programmers around the world.
 
 ## A Brief Overview of Go
-Go is an open-source, statically-typed, and compiled programming language designed to be simple and efficient. It draws inspiration from several existing languages, such as C, Pascal, and Oberon, but incorporates modern language features to address the challenges faced in contemporary software development.
+Go is an open-source, statically typed, and compiled programming language designed to be simple and efficient. It draws inspiration from several existing languages, such as C, Pascal, and Oberon, but incorporates modern language features to address the challenges faced in contemporary software development.
 
 ### Key Features
 - Simplicity: Go's syntax is clean and concise, making it easy for developers to read and understand the code. It eliminates unnecessary complexity, favoring a straightforward and intuitive design.
@@ -318,12 +330,3 @@ In this blog, we've only scratched the surface of what Go has to offer. As you d
 
 If you're looking for a language that strikes a balance between simplicity and power, Go is undoubtedly a language worth exploring. Whether you're a seasoned developer or just starting your programming journey, Go's approachable syntax and performance capabilities make it an excellent addition to your programming toolkit.
 
-## Resources to learn Go
-- [Go's official documentation](https://go.dev/doc/effective_go)
-- [Go By Example](https://gobyexample.com/)
-- [Go Web Examples](https://gowebexamples.com/)
-- [Gophercises by Jon Calhoun](https://gophercises.com/)
-- [50 Shades of Go by Kyle Quest](https://golang50shad.es/)
-- [Practical Go by Dave Cheney](https://dave.cheney.net/practical-go)
-- [Kavya Joshi Blogs](https://kavyajoshi.me/)
-- [Mini Resources list by Kasia](https://dev.to/kasia/mini-resource-list-for-golang-m87)

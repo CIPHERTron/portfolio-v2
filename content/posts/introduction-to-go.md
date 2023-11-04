@@ -24,7 +24,7 @@ tags:
 - [Practical Go by Dave Cheney](https://dave.cheney.net/practical-go)
 - [Kavya Joshi Blogs](https://kavyajoshi.me/)
 - [Mini Resources list by Kasia](https://dev.to/kasia/mini-resource-list-for-golang-m87)
-- [Notes by Pritish](https://pritish007.notion.site/Golang-Minutes-4410500d76744b3aaa3aefb703e3c649)
+- [Golang Minutes by Pritish](https://pritish007.notion.site/Golang-Minutes-4410500d76744b3aaa3aefb703e3c649)
 
 
 ## Introduction

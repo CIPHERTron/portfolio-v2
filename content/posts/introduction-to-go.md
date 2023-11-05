@@ -34,7 +34,7 @@ In the ever-evolving landscape of software development, programming languages pl
 Go is an open-source, statically typed, and compiled programming language designed to be simple and efficient. It draws inspiration from several existing languages, such as C, Pascal, and Oberon, but incorporates modern language features to address the challenges faced in contemporary software development.
 
 ### Key Features
-- Simplicity: Go's syntax is clean and concise, making it easy for developers to read and understand the code. It eliminates unnecessary complexity, favoring a straightforward and intuitive design.
+- **Simplicity**: Go's syntax is clean and concise, making it easy for developers to read and understand the code. It eliminates unnecessary complexity, favoring a straightforward and intuitive design.
 
 - **Concurrency Support**: Go has built-in support for concurrency through goroutines and channels. Goroutines are lightweight threads that enable concurrent execution, while channels facilitate communication and synchronization between goroutines.
 

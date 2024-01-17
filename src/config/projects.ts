@@ -34,7 +34,7 @@ export const projects = [
     name: "Kaagaz by D361",
     desc: "Implemented a highly scalable frontend for the official magazine of NIT Rourkela along with a custom markdown parser. Incorporated blog, progressive web app (PWA) & animation features for a seamless experience using Next.js, TypeScript, Styled Components, integrated Google Analytics, and deployed it on Vercel.",
     github: "https://github.com/CIPHERTron/kaagaz",
-    demo: "https://kaagaz.org.in",
+    demo: "https://d361.vercel.app",
     preview:
       "https://res.cloudinary.com/pritish007/image/upload/v1644865967/Personal%20Portfolio/Projects/Screenshot_2022-02-15_at_12.42.02_AM_ug11wv.png",
     tech: ["Next.js", "TypeScript", "Emotion", "PWA", "Google Analytics"],

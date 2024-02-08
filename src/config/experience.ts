@@ -1,13 +1,13 @@
 export const experience = [
   {
     org: "Harness.io",
-    role: "SDE Intern",
+    role: "Software Engineer 1",
     link: "https://harness.io/",
     date: "Aug, 2023 - Present",
     content: [
-      "Collaborated with a multi-disciplinary team of software engineers, user interface designers, and product managers from different countries in the Adoption Engineering team to automate workflows and ship features.",
-      "Implemented automation for extracting customer details from Jira and retrieving their ACV & license details from Salesforce. Devised and implemented a customized trigger webhook using SEI & JS to notify the details on Slack.",
-      "Attended daily status meetings & worked on several other automations such as License Renewal & License Utilization Alerts, Issue Inactivity Alerts, etc using Harness's SEI module and JavaScript",
+      "Developed a business value realization dashboard for the Harness platform, employing React, TypeScript, and Golang. This tool checks pipeline construction best practices and tracks stickiness metrics to boost customer retention",
+      "Developed an internal tool for customer onboarding and lifecycle tracking, successfully retiring the Gainsight platform and consequently saving the costs previously incurred from its use",
+      "Additionally, designed and implemented a scheduled automation for issuing license utilization alerts and renewal notifications on Slack",
     ],
   },
   {

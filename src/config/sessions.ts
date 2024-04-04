@@ -1,5 +1,23 @@
 export const sessions = [
   {
+    title: "How to prepare dev for placements?",
+    date: "8 January 2024",
+    image:
+      "https://res.cloudinary.com/pritish007/image/upload/v1712256329/Personal%20Portfolio/Sessions/tpcnitr.jpg",
+    desc: "Unlocking Success: Gain invaluable insights on preparing for software development placements. Discover essential strategies, tips, and techniques to excel in interviews and showcase your skills effectively. Let's navigate the path to placement success together...",
+    rec: "https://www.youtube.com/live/7RDAj3VDIZU?si=9vvYVqIh97AzZOSX",
+    slides: "https://placements.nitrkl.ac.in/",
+  },
+  {
+    title: "GDSC NITR Dev Diaries - Episode 1",
+    date: "9 January 2024",
+    image:
+      "https://res.cloudinary.com/pritish007/image/upload/v1712256329/Personal%20Portfolio/Sessions/dscpodcast.jpg",
+    desc: "Tune in now to witness the first-hand account of a GDSC alum who has carved a niche in the tech industry. Whether you're a student, developer, or tech enthusiast, this episode promises valuable insights and a dose of inspiration. Don't miss out on the wisdom Pritish Samal has to offer in this exclusive Dev-Diaries interview...",
+    rec: "https://youtu.be/o0V7Z6UQMBY",
+    slides: "https://dscnitrourkela.org/",
+  },
+  {
     title: "LFX Mentorship",
     date: "24 January 2023",
     image:

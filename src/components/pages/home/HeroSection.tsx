@@ -64,7 +64,7 @@ const HeroSection = () => {
           style={{ textDecoration: "none" }}
           mt={7}
           isExternal
-          href="https://pritishsamal.com/resume.pdf"
+          href="https://pritishsamal.xyz/resume.pdf"
         >
           <Button
             leftIcon={<FaExternalLinkSquareAlt />}

@@ -13,7 +13,7 @@ export const sessions = [
     date: "9 January 2024",
     image:
       "https://res.cloudinary.com/pritish007/image/upload/v1712256329/Personal%20Portfolio/Sessions/dscpodcast.jpg",
-    desc: "Tune in now to witness the first-hand account of a GDSC alum who has carved a niche in the tech industry. Whether you're a student, developer, or tech enthusiast, this episode promises valuable insights and a dose of inspiration. Don't miss out on the wisdom Pritish Samal has to offer in this exclusive Dev-Diaries interview...",
+    desc: "Tune in now to witness the first-hand account of a GDSC alum who has carved a niche in the tech industry. Whether you're a student, developer, or tech enthusiast, this episode promises valuable insights and a dose of inspiration. Don't miss...",
     rec: "https://youtu.be/o0V7Z6UQMBY",
     slides: "https://dscnitrourkela.org/",
   },

@@ -194,7 +194,7 @@ function ProjectCard({
           <span className="icon">
             <FaLock />
           </span>
-          <span className="url">pritishsamal.com</span>
+          <span className="url">pritishsamal.xyz</span>
         </WebsiteUrl>
         <span />
       </TabBar>

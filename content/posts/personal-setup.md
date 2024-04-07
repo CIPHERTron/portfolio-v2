@@ -6,7 +6,7 @@ thumbnail: "📘"
 published: true
 latest: false
 description: "Here, in this article, I basically list the technologies and their specs I use on a daily basis including my laptop, monitor, keyboard, etc. However, this will always be a work in progress..."
-cover: "https://res.cloudinary.com/pritish007/image/upload/v1712505153/Personal%20Portfolio/setupv1.heic"
+cover: "https://res.cloudinary.com/pritish007/image/upload/v1712507806/setupv1.jpg"
 articleLink: "https://pritishsamal.xyz"
 tags:
   - Setup

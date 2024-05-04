@@ -60,7 +60,7 @@ export const socialLinks: Array<MotionLinkProps> = [
   },
   {
     platformName: "Resume",
-    url: "https://pritishsamal.com/resume.pdf",
+    url: "https://pritishsamal.xyz/resume.pdf",
     icon: FaFileAlt,
   },
   {

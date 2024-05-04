@@ -7,7 +7,7 @@ import * as React from "react";
 import createEmotionCache from "styles/createEmotionCache";
 import customTheme from "styles/theme";
 
-export const APP_NAME = "pritishsamal.com";
+export const APP_NAME = "pritishsamal.xyz";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {

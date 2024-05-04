@@ -7,7 +7,7 @@ description: "The Kyverno Command Line Interface (CLI) is designed to validate a
 published: true
 latest: false
 cover: "https://res.cloudinary.com/pritish007/image/upload/v1655938745/LFX/LFX_-_Kyverno_uqws4a.png"
-articleLink: "https://pritishsamal.com/blog/lfx-mentorship-experience-with-kyverno"
+articleLink: "https://pritishsamal.xyz/blog/lfx-mentorship-experience-with-kyverno"
 tags:
   - LFX
   - Cloud

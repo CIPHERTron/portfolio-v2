@@ -7,15 +7,15 @@ export const defaultSEOConfig: DefaultSeoProps = {
   titleTemplate: "%s | CIPHERTron",
   defaultTitle: "CIPHERTron | Pritish Samal",
   description: "Pritish Samal's Portfolio Website | CIPHERTron",
-  canonical: "https://pritishsamal.com",
+  canonical: "https://pritishsamal.xyz",
   openGraph: {
-    url: "https://pritishsamal.com",
+    url: "https://pritishsamal.xyz",
     title: "Pritish Samal",
     description: "Pritish Samal's Portfolio Website",
     images: [
       {
         url: "https://res.cloudinary.com/pritish007/image/upload/v1644348821/Personal%20Portfolio/Favicon_nckr8a.png",
-        alt: "pritishsamal.com og-image",
+        alt: "pritishsamal.xyz og-image",
       },
     ],
     site_name: "Pritish Samal",

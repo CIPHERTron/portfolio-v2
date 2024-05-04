@@ -1,5 +1,3 @@
-import { FaExternalLinkSquareAlt } from "react-icons/fa";
-
 import {
   Box,
   Button,
@@ -11,6 +9,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import styled from "@emotion/styled";
+import { FaExternalLinkSquareAlt } from "react-icons/fa";
 
 const Container = styled(Box)`
   -webkit-user-select: none;

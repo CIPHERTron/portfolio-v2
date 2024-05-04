@@ -1,4 +1,4 @@
-import { DeepPartial, Theme } from "@chakra-ui/react";
+import type { DeepPartial, Theme } from "@chakra-ui/react";
 
 const styles: DeepPartial<Theme["styles"]> = {
   global: (props) => ({

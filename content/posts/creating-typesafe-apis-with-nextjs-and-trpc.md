@@ -5,9 +5,9 @@ legacyID: "creating-typesafe-apis-with-nextjs-and-trpc"
 thumbnail: "📘"
 description: "tRPC simplifies the creation and consumption of completely type-safe APIs without relying on schemas or code generation. This framework is designed for..."
 published: true
-latest: true
+latest: false
 cover: "https://www.wilchow.com/images/posts//2023/trpc-nextjs-hero.jpg"
-articleLink: "https://github.com/kyverno/kyverno/wiki/Running-in-development-mode#develop-kyverno-cli-locally"
+articleLink: "https://pritishsamal.xyz/blog"
 tags:
   - tRPC
   - Nextjs

@@ -5,7 +5,7 @@ legacyID: "introduction-to-go"
 thumbnail: "📘"
 description: "In the ever-evolving landscape of software development, programming languages play a vital role in shaping the way we build and deploy..."
 published: true
-latest: true
+latest: false
 cover: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hc1uaz1tvuq53qq0obl8.png"
 articleLink: "https://dev.to/ciphertron/introduction-to-go-a-powerful-and-efficient-programming-language-5bej"
 tags:

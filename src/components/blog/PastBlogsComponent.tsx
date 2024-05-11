@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 import type { BlogPostType } from "models/blog";
 import { dateFormatLong } from "utils/dateFormat";
+// import { calculateReadTime } from "utils/posts";
 
 function calculateReadTime(str: string) {
   const wordsPerMinute = 200; // Average case.
@@ -33,12 +34,15 @@ const BlogContainer = styled(Box)`
   height: fit-content;
   border-radius: 20px;
   padding: 20px;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer;
 
   @media (max-width: 500px) {
     padding: 15px 20px;
@@ -61,11 +65,6 @@ const TagWrapper = styled.p`
   margin-right: 5px;
 `;
 
-const ImageContainer = styled.div`
-  margin: 0;
-  margin-bottom: 4px;
-`;
-
 const Tags = ({ tag, mode }: TagProp) => {
   return (
     <TagWrapper
@@ -78,13 +77,12 @@ const Tags = ({ tag, mode }: TagProp) => {
   );
 };
 
-const BlogComponent = ({ postData }: BlogPreviewProps) => {
+const PastBlogsComponent = ({ postData }: BlogPreviewProps) => {
   const { colorMode } = useColorMode();
   const content = postData.rawContent
-  const readTime = calculateReadTime(content || "")
+  const readTime = calculateReadTime(content)
 
   return (
-    <Link href={`/blog/${postData.id}`} passHref>
     <BlogContainer
       style={
         colorMode === "dark"
@@ -92,37 +90,25 @@ const BlogComponent = ({ postData }: BlogPreviewProps) => {
           : { backgroundColor: "#EDF1FF", color: "#1A202C" }
       }
     >
-
-      <ImageContainer>
-        <img style={{borderRadius: '20px 20px 0 0'}} src={postData.cover} alt={postData.description} />
-      </ImageContainer>
-      
-      <Heading size="lg">{postData.title}</Heading>
+      <div>
+      <Heading size="md">{postData.title}</Heading>
       <Box>
         <Text>{`${dateFormatLong(postData.date)} ${readTime}`}</Text>
       </Box>
-      <Text fontSize="md" lineHeight="1.5" mt="4">
-        {postData.description}
-      </Text>
-      
-        {/* <Button
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <Link href={`/blog/${postData.id}`} passHref>
+        <Button
           rightIcon={<FaArrowRight />}
           colorScheme="linkedin"
           variant="solid"
-          mt={5}
         >
-          Read More
-        </Button> */}
-      
-
-      <div className="tags-container">
-        {postData.tags?.map((item) => (
-          <Tags key={item} mode={colorMode} tag={item} />
-        ))}
+          Read
+        </Button>
+      </Link>
       </div>
     </BlogContainer>
-    </Link>
   );
 };
 
-export default BlogComponent;
+export default PastBlogsComponent;

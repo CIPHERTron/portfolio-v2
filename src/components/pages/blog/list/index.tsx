@@ -2,15 +2,22 @@ import { Box, Grid, Heading, Text } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 
 import BlogComponent from "components/blog/BlogComponent";
+import PastBlogsComponent from "components/blog/PastBlogsComponent";
 import { baseUrl } from "constants/baseUrl";
 import { PSOgImage } from "utils/PSOgImage";
 
 import type { BlogPostListProps } from "./types";
 
 const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
-  const blogPosts = allPostsData.map((postData) => (
+  const latest = allPostsData.filter(x => x.latest)
+  const past = allPostsData.filter(x => !x.latest)
+  const blogPosts = latest.map((postData) => (
     <BlogComponent postData={postData} key={postData.title} />
   ));
+
+  const pastBlogs = past.map((postData) => (
+    <PastBlogsComponent postData={postData} key={postData.title} />
+  ))
 
   return (
     <Box>
@@ -28,18 +35,18 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
         }}
       />
 
-      <Box marginBottom={22}>
-        <Heading as="h1" size="xl" marginBottom={2}>
-          Blog Posts
-        </Heading>
-        <Text>
-          Lately I&apos;ve developed an interest in technical writing. Take
-          alook at some of my posts.
-        </Text>
-      </Box>
-
-      <Grid gap={16} marginY={12}>
+      <Heading as="h1" size="xl" marginBottom={6}>
+        Latest Post
+      </Heading>
+      <Grid gap={16} marginBottom={8}>
         {blogPosts}
+      </Grid>
+
+      <Heading as="h1" size="xl" marginBottom={6}>
+        More Posts
+      </Heading>
+      <Grid gap={6} marginBottom={12}>
+        {pastBlogs}
       </Grid>
     </Box>
   );

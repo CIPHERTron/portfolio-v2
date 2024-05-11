@@ -9,6 +9,7 @@ enum MandatoryFieldKeys {
   cover,
   articleLink,
   latest,
+  rawContent,
 }
 type MandatoryFieldsType = keyof typeof MandatoryFieldKeys;
 
@@ -22,7 +23,7 @@ export type BlogPostType = Record<MandatoryFieldsType, string> &
   Partial<Record<OptionalFieldsType, string>> & {
     published: boolean;
     contentHtml: any;
-    rawContent: any;
+    // rawContent: any;
     cover: any;
     articleLink: any;
     description?: string;

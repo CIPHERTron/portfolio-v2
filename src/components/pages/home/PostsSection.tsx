@@ -20,7 +20,7 @@ const PostsSection = ({ data }: PostsSectionProps) => {
       <Grid gap={8}>
         {data
           .filter((post) => post.latest === true)
-          .slice(0, 2)
+          // .slice(0, 2)
           .map((postData) => (
             <BlogComponent postData={postData} key={postData.id} />
           ))}

@@ -10,5 +10,6 @@
     "projects",
     "static",
     "theme"
-  ]
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

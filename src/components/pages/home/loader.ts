@@ -14,7 +14,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   );
 
   allPostsData.forEach(async (x: BlogPostType) => {
-    const rawContent = (await getPostData(x.id)).rawContent;
+    const { rawContent } = await getPostData(x.id);
     x.rawContent = rawContent;
   });
 

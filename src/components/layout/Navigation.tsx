@@ -53,7 +53,7 @@ const navigations: NavItemProps[] = [
     label: "Sessions",
   },
   {
-    href: "/photography",
+    href: "/captures",
     label: "Captures",
   },
 ];

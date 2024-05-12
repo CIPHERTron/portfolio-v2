@@ -1,6 +1,5 @@
 import { ColorModeScript } from "@chakra-ui/react";
 import createEmotionServer from "@emotion/server/create-instance";
-import { Analytics } from "@vercel/analytics/react";
 import type { DocumentContext } from "next/document";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import * as React from "react";
@@ -70,7 +69,6 @@ class MyDocument extends Document {
           />
           <Main />
           <NextScript />
-          <Analytics />
           <script
             src="//code.tidio.co/1akzfxeqrqrftvc2dnnar4sdfugvdi4m.js"
             async

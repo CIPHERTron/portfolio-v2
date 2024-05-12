@@ -8,7 +8,7 @@ function SessionsPage() {
   return (
     <Box>
       <Heading size="xl" marginY={5}>
-        Talks & Sessions
+        Talks & Sessions 🎤
       </Heading>
       <Text fontSize="lg" mb={3}>
         Public Speaking has always been tough for me. I tend to get nervous when

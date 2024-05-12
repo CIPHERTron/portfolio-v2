@@ -36,14 +36,14 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
       />
 
       <Heading as="h1" size="xl" marginBottom={6}>
-        Latest Post
+        Latest Post 📝
       </Heading>
       <Grid gap={16} marginBottom={8}>
         {blogPosts}
       </Grid>
 
       <Heading as="h1" size="xl" marginBottom={6}>
-        More Posts
+        More Posts 📑
       </Heading>
       <Grid gap={6} marginBottom={12}>
         {pastBlogs}

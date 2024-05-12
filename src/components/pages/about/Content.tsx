@@ -9,6 +9,8 @@ const textProps: BoxProps = {
   textAlign: "left",
 };
 
+// https://res.cloudinary.com/pritish007/image/upload/v1715515689/Personal%20Portfolio/personal_cover.jpg
+
 const Content = () => {
   return (
     <MotionBox
@@ -20,22 +22,32 @@ const Content = () => {
       animate="after"
     >
       <Text {...textProps}>
-        Pritish this side, a junior year student from National Institute of
-        Technology, Rourkela (🇮🇳) majoring in Ceramic Engineering. I&apos;m a
-        Full Stack Developer having experience in MERN Stack, Flask and
-        frameworks like Nextjs & Gatsby. I&apos;m also a huge cloud &
-        open-source enthusiast who believes in the power of community. Writing
-        clean code is and will always be a top priority for me.
+        I&apos;m a passionate <b>Full Stack Developer</b> from 🇮🇳 with
+        a knack for crafting robust applications and contributing to the
+        open-source community. Graduating from <b>NIT Rourkela</b> with a degree
+        in <b>Ceramic Engineering</b>, my journey led me to the exciting world
+        of technology, where I specialize in MERN Stack, Golang, Java, Python,
+        Flask, and frameworks like Next.js & Gatsby. At the moment, I&apos;m
+        exploring how we can use{" "}
+        <b>Next.js 13 app router, tRPC, Prisma, and Postgre</b>s to create
+        impactful solutions.
       </Text>
 
       <Text {...textProps}>
-        The recent outbreak of the global pandemic, which led to the lockdown,
-        has made me a typical computer nerd. So, you&apos;ll rarely find me AFK.
-        When I&apos;m not coding, I&apos;ll be busy organising or participating
-        in Hackathons, involved in community programs, hosting or attending
-        seminars & workshops, writing blogs and solving doubt & mentoring
-        students. I also love outdoor sports like football & basketball and have
-        a knack of mobile photography.
+        In the midst of the pandemic, I immersed myself in coding, organizing
+        hackathons, and mentoring students. Now, as a <b>Software Engineer</b>{" "}
+        at <b>Harness</b>, I continue to push boundaries, leveraging
+        technologies like
+        <b>React, TS, Jest, Java, Golang, and Cypress</b>. When I&apos;m not
+        coding, you&apos;ll find me on the field playing football or capturing
+        moments with my mobile camera.
+      </Text>
+
+      <Text {...textProps}>
+        With a commitment to writing clean code and a passion for learning,
+        I&apos;m dedicated to making a positive impact through technology and
+        community-driven initiatives. Let&apos;s build something amazing
+        together!
       </Text>
     </MotionBox>
   );

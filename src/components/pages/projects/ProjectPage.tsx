@@ -8,7 +8,7 @@ import NotableProjects from "./NotableProjects";
 function ProjectPage() {
   return (
     <Box>
-      <Heading size="xl">Featured Projects</Heading>
+      <Heading size="xl">Featured Projects 👨🏻‍💻</Heading>
 
       {projects.map(
         (item) =>

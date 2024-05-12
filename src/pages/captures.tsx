@@ -1,5 +1,5 @@
-import React from "react";
 import { Heading, Text, Box } from "@chakra-ui/react";
+import React from "react";
 import Gallery from "react-photo-gallery";
 
 React.useLayoutEffect = React.useEffect;
@@ -54,7 +54,7 @@ const Captures: React.FC = () => {
   return (
     <Box>
       <Heading size="xl" marginY={5}>
-        Explore Life Through My Lens: A Gallery of Captured Moments
+        Explore Life Through My Lens 📸
       </Heading>
       <Text fontSize="lg" mb={3}>
         Step into my visual realm where pixels dance and memories come alive.

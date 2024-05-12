@@ -4,7 +4,7 @@ const HeadSection = () => {
   return (
     <Box marginBottom={[8]}>
       <Heading mb={4} size="xl">
-        👋 Hi, I'm Pritish.
+        👋 Hi, I&apos;m Pritish.
       </Heading>
       <Image
         src="https://res.cloudinary.com/pritish007/image/upload/v1715515689/Personal%20Portfolio/personal_cover.jpg"

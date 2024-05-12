@@ -22,11 +22,11 @@ const Content = () => {
       animate="after"
     >
       <Text {...textProps}>
-        I&apos;m a passionate <b>Full Stack Developer</b> from 🇮🇳 with
-        a knack for crafting robust applications and contributing to the
-        open-source community. Graduating from <b>NIT Rourkela</b> with a degree
-        in <b>Ceramic Engineering</b>, my journey led me to the exciting world
-        of technology, where I specialize in MERN Stack, Golang, Java, Python,
+        I&apos;m a passionate <b>Full Stack Developer</b> from 🇮🇳 with a knack
+        for crafting robust applications and contributing to the open-source
+        community. Graduating from <b>NIT Rourkela</b> with a degree in{" "}
+        <b>Ceramic Engineering</b>, my journey led me to the exciting world of
+        technology, where I specialize in MERN Stack, Golang, Java, Python,
         Flask, and frameworks like Next.js & Gatsby. At the moment, I&apos;m
         exploring how we can use{" "}
         <b>Next.js 13 app router, tRPC, Prisma, and Postgre</b>s to create

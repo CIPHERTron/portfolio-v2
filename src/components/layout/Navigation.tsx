@@ -52,6 +52,10 @@ const navigations: NavItemProps[] = [
     href: "/sessions",
     label: "Sessions",
   },
+  {
+    href: "/photography",
+    label: "Captures",
+  },
 ];
 
 const Navigation = () => {

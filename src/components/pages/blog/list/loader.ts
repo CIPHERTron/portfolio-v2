@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps<BlogPostListProps> = async () => {
   );
 
   allPostsData.forEach(async (x: BlogPostType) => {
-    const rawContent = (await getPostData(x.id)).rawContent;
+    const { rawContent } = await getPostData(x.id);
     x.rawContent = rawContent;
   });
 
@@ -22,7 +22,7 @@ export const getStaticProps: GetStaticProps<BlogPostListProps> = async () => {
 
   return {
     props: {
-      allPostsData
+      allPostsData,
     },
   };
-}
+};

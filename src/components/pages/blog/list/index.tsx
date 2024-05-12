@@ -1,4 +1,4 @@
-import { Box, Grid, Heading, Text } from "@chakra-ui/react";
+import { Box, Grid, Heading } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 
 import BlogComponent from "components/blog/BlogComponent";
@@ -9,15 +9,15 @@ import { PSOgImage } from "utils/PSOgImage";
 import type { BlogPostListProps } from "./types";
 
 const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
-  const latest = allPostsData.filter(x => x.latest)
-  const past = allPostsData.filter(x => !x.latest)
+  const latest = allPostsData.filter((x) => x.latest);
+  const past = allPostsData.filter((x) => !x.latest);
   const blogPosts = latest.map((postData) => (
     <BlogComponent postData={postData} key={postData.title} />
   ));
 
   const pastBlogs = past.map((postData) => (
     <PastBlogsComponent postData={postData} key={postData.title} />
-  ))
+  ));
 
   return (
     <Box>

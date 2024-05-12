@@ -5,4 +5,7 @@ module.exports = {
     "plugin:react/jsx-runtime",
     "plugin:@next/next/recommended",
   ],
+  rules: {
+    "no-param-reassign": 0
+  }
 };

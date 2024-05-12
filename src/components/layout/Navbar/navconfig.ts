@@ -24,4 +24,9 @@ export const navigations = [
     label: "Sessions",
     active: "sessions",
   },
+  {
+    href: "/captures",
+    label: "Captures",
+    active: "captures",
+  },
 ];

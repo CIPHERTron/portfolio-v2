@@ -10,10 +10,10 @@ import { dateFormatLong } from "utils/dateFormat";
 function calculateReadTime(str: string) {
   const wordsPerMinute = 200; // Average case.
   let result;
-  
-  let textLength = str.split(" ").length; // Split by words
-  if(textLength > 0){
-    let value = Math.ceil(textLength / wordsPerMinute);
+
+  const textLength = str.split(" ").length; // Split by words
+  if (textLength > 0) {
+    const value = Math.ceil(textLength / wordsPerMinute);
     result = `~ ${value} min read`;
   }
 
@@ -22,11 +22,6 @@ function calculateReadTime(str: string) {
 
 type BlogPreviewProps = {
   postData: BlogPostType;
-};
-
-type TagProp = {
-  tag: string;
-  mode: string;
 };
 
 const BlogContainer = styled(Box)`
@@ -58,29 +53,10 @@ const BlogContainer = styled(Box)`
   }
 `;
 
-const TagWrapper = styled.p`
-  padding: 5px 10px;
-  width: fit-content;
-  border-radius: 4px;
-  margin-right: 5px;
-`;
-
-const Tags = ({ tag, mode }: TagProp) => {
-  return (
-    <TagWrapper
-      style={
-        mode === "dark"
-          ? { backgroundColor: "#014f86" }
-          : { backgroundColor: "#90dbf4" }
-      }
-    >{`#${tag.toLowerCase()}`}</TagWrapper>
-  );
-};
-
 const PastBlogsComponent = ({ postData }: BlogPreviewProps) => {
   const { colorMode } = useColorMode();
-  const content = postData.rawContent
-  const readTime = calculateReadTime(content)
+  const content = postData.rawContent;
+  const readTime = calculateReadTime(content);
 
   return (
     <BlogContainer
@@ -91,21 +67,27 @@ const PastBlogsComponent = ({ postData }: BlogPreviewProps) => {
       }
     >
       <div>
-      <Heading size="md">{postData.title}</Heading>
-      <Box>
-        <Text>{`${dateFormatLong(postData.date)} ${readTime}`}</Text>
-      </Box>
+        <Heading size="md">{postData.title}</Heading>
+        <Box>
+          <Text>{`${dateFormatLong(postData.date)} ${readTime}`}</Text>
+        </Box>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <Link href={`/blog/${postData.id}`} passHref>
-        <Button
-          rightIcon={<FaArrowRight />}
-          colorScheme="linkedin"
-          variant="solid"
-        >
-          Read
-        </Button>
-      </Link>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Link href={`/blog/${postData.id}`} passHref>
+          <Button
+            rightIcon={<FaArrowRight />}
+            colorScheme="linkedin"
+            variant="solid"
+          >
+            Read
+          </Button>
+        </Link>
       </div>
     </BlogContainer>
   );

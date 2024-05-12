@@ -7,7 +7,7 @@ import SessionComponent from "./SessionComponent";
 function SessionsPage() {
   return (
     <Box>
-      <Heading size="3xl" marginY={5}>
+      <Heading size="xl" marginY={5}>
         Talks & Sessions
       </Heading>
       <Text fontSize="lg" mb={3}>

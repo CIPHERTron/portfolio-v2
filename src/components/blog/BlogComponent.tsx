@@ -1,7 +1,6 @@
-import { Box, Heading, Text, Button, useColorMode } from "@chakra-ui/react";
+import { Box, Heading, Text, useColorMode } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
 
 import type { BlogPostType } from "models/blog";
 import { dateFormatLong } from "utils/dateFormat";
@@ -9,10 +8,10 @@ import { dateFormatLong } from "utils/dateFormat";
 function calculateReadTime(str: string) {
   const wordsPerMinute = 200; // Average case.
   let result;
-  
-  let textLength = str.split(" ").length; // Split by words
-  if(textLength > 0){
-    let value = Math.ceil(textLength / wordsPerMinute);
+
+  const textLength = str.split(" ").length; // Split by words
+  if (textLength > 0) {
+    const value = Math.ceil(textLength / wordsPerMinute);
     result = `~ ${value} min read`;
   }
 
@@ -80,31 +79,34 @@ const Tags = ({ tag, mode }: TagProp) => {
 
 const BlogComponent = ({ postData }: BlogPreviewProps) => {
   const { colorMode } = useColorMode();
-  const content = postData.rawContent
-  const readTime = calculateReadTime(content || "")
+  const content = postData.rawContent;
+  const readTime = calculateReadTime(content || "");
 
   return (
     <Link href={`/blog/${postData.id}`} passHref>
-    <BlogContainer
-      style={
-        colorMode === "dark"
-          ? { backgroundColor: "#22223b", color: "#fff" }
-          : { backgroundColor: "#EDF1FF", color: "#1A202C" }
-      }
-    >
+      <BlogContainer
+        style={
+          colorMode === "dark"
+            ? { backgroundColor: "#22223b", color: "#fff" }
+            : { backgroundColor: "#EDF1FF", color: "#1A202C" }
+        }
+      >
+        <ImageContainer>
+          <img
+            style={{ borderRadius: "20px 20px 0 0" }}
+            src={postData.cover}
+            alt={postData.description}
+          />
+        </ImageContainer>
 
-      <ImageContainer>
-        <img style={{borderRadius: '20px 20px 0 0'}} src={postData.cover} alt={postData.description} />
-      </ImageContainer>
-      
-      <Heading size="lg">{postData.title}</Heading>
-      <Box>
-        <Text>{`${dateFormatLong(postData.date)} ${readTime}`}</Text>
-      </Box>
-      <Text fontSize="md" lineHeight="1.5" mt="4">
-        {postData.description}
-      </Text>
-      
+        <Heading size="lg">{postData.title}</Heading>
+        <Box>
+          <Text>{`${dateFormatLong(postData.date)} ${readTime}`}</Text>
+        </Box>
+        <Text fontSize="md" lineHeight="1.5" mt="4">
+          {postData.description}
+        </Text>
+
         {/* <Button
           rightIcon={<FaArrowRight />}
           colorScheme="linkedin"
@@ -113,14 +115,13 @@ const BlogComponent = ({ postData }: BlogPreviewProps) => {
         >
           Read More
         </Button> */}
-      
 
-      <div className="tags-container">
-        {postData.tags?.map((item) => (
-          <Tags key={item} mode={colorMode} tag={item} />
-        ))}
-      </div>
-    </BlogContainer>
+        <div className="tags-container">
+          {postData.tags?.map((item) => (
+            <Tags key={item} mode={colorMode} tag={item} />
+          ))}
+        </div>
+      </BlogContainer>
     </Link>
   );
 };

@@ -14,7 +14,7 @@ export const projects = [
     name: "NITRUtsav NIT Rourkela",
     desc: "NITRUtsav is the literary and cultural festival of NIT Rourkela. Spearheaded a developer team to create a highly interactive website for the cultural fest of NIT Rourkela which had close to 1 million hits. Developed the frontend using React, TypeScript, Styled Components, and Twin Macro whereas used Express, TypeScript, GraphQL, Prisma, & MongoDB for the backend & then deployed it on Digital Ocean.",
     github: "https://github.com/dscnitrourkela/project-tart",
-    demo: "https://nitrutsav.live/",
+    demo: "https://nitrutsav-nitr-2k23.netlify.app/",
     preview:
       "https://res.cloudinary.com/pritish007/image/upload/v1690437004/Personal%20Portfolio/Projects/Screenshot_2023-07-27_at_11.19.42_AM_aie3rv.png",
     tech: ["Next", "TypeScript", "GraphQL", "Tailwind CSS"],

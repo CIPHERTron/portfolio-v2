@@ -24,7 +24,7 @@ export const projects = [
     name: "HackNITR Hackathon",
     desc: "HackNITR is one of the largest student-run hackathons in the eastern India. I lead the technical team and developed the official HackNITR hackathon website with a focus on high performance, responsiveness, and SEO.",
     github: "https://github.com/dscnitrourkela/project-oregano",
-    demo: "https://hacknitr.com/",
+    demo: "https://hacknitr4.netlify.app/",
     preview:
       "https://res.cloudinary.com/pritish007/image/upload/v1644919181/Personal%20Portfolio/hacknitr_c1znha.png",
     tech: ["Gatsby", "JavaScript", "Emotion"],

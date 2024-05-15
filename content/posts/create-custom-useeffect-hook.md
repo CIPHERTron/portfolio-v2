@@ -5,7 +5,7 @@ legacyID: "create-custom-useeffect-hook"
 thumbnail: "📘"
 description: "React's useEffect hook is fundamental for managing side effects in functional components. While React provides the native useEffect hook to..."
 published: true
-latest: true
+latest: false
 cover: "https://res.cloudinary.com/pritish007/image/upload/v1714996435/Personal%20Portfolio/custom-hook_q1rspq.png"
 articleLink: "https://pritishsamal.xyz/blog"
 tags:

@@ -14,8 +14,8 @@ const Home = ({ allPostsData }: HomeProps) => {
       <HeroSection />
       <Experience />
       <TechStack />
-      <ProjectsSection />
       <PostsSection data={allPostsData} />
+      <ProjectsSection />
       <VolunteerExperience />
     </Box>
   );

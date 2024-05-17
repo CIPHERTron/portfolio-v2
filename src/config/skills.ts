@@ -108,7 +108,7 @@ export const skills = [
     type: "technology",
   },
   {
-    name: "Git",
+    name: "Git SCM",
     image:
       "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/git.svg",
     type: "technology",

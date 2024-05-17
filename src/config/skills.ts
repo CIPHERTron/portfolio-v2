@@ -56,7 +56,7 @@ export const skills = [
   {
     name: "Express",
     image:
-      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/express.svg",
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/1c296f155e6cea5f37e5bb0f567b2ac743a13e3a/public/images/skills/express.svg",
     type: "technology",
   },
   {
@@ -81,6 +81,12 @@ export const skills = [
     name: "MongoDB",
     image:
       "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/mongodb.svg",
+    type: "technology",
+  },
+  {
+    name: "PostgreSQL",
+    image:
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/postgresql.svg",
     type: "technology",
   },
   {
@@ -114,9 +120,33 @@ export const skills = [
     type: "technology",
   },
   {
+    name: "tRPC",
+    image:
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/trpc.svg",
+    type: "technology",
+  },
+  {
+    name: "NextAuth",
+    image:
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/nextauth.svg",
+    type: "technology",
+  },
+  {
+    name: "Prisma",
+    image:
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/prisma.svg",
+    type: "technology",
+  },
+  {
     name: "Postman",
     image:
       "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/postman.svg",
+    type: "technology",
+  },
+  {
+    name: "Auth0",
+    image:
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/auth0.svg",
     type: "technology",
   },
   {
@@ -132,9 +162,15 @@ export const skills = [
     type: "platform",
   },
   {
-    name: "Heroku",
+    name: "Harness",
     image:
-      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/heroku.svg",
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/harness.svg",
+    type: "platform",
+  },
+  {
+    name: "GCP",
+    image:
+      "https://raw.githubusercontent.com/CIPHERTron/portfolio/main/public/images/skills/gcp.svg",
     type: "platform",
   },
   {

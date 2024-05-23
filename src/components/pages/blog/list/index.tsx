@@ -81,7 +81,8 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
           </InputLeftElement>
           <Input
             type="text"
-            placeholder="Start typing the title..."
+            placeholder="Type title to search..."
+            variant="filled"
             onChange={(e) => setQuery(e.target.value)}
           />
         </InputGroup>

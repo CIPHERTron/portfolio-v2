@@ -1,12 +1,11 @@
-import { Box, Heading, Text, Button, Image, useColorMode } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, useColorMode } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
 
+import useMediaQuery from "hooks/useMediaQuery";
 import type { BlogPostType } from "models/blog";
 import { dateFormatLong } from "utils/dateFormat";
 // import { calculateReadTime } from "utils/posts";
-import useMediaQuery from "hooks/useMediaQuery";
 
 function calculateReadTime(str: string) {
   const wordsPerMinute = 200; // Average case.
@@ -66,8 +65,8 @@ const BlogContainer = styled(Box)`
 `;
 
 const ImageWrapper = styled.div`
-width: 100%;
-height: 100px;
+  width: 100%;
+  height: 100px;
 `;
 
 const PastBlogsComponent = ({ postData }: BlogPreviewProps) => {
@@ -78,27 +77,34 @@ const PastBlogsComponent = ({ postData }: BlogPreviewProps) => {
 
   return (
     <Link href={`/blog/${postData.id}`} passHref>
-    <BlogContainer
-      style={
-        colorMode === "dark"
-          ? { backgroundColor: "#22223b", color: "#fff" }
-          : { backgroundColor: "#EDF1FF", color: "#1A202C" }
-      }
-    >
-      {
-        !isMobileView ? <ImageWrapper>
-        <Image width="100%" height="100%" objectFit="cover" borderRadius={8} src={postData.cover} />
-      </ImageWrapper> : <i></i>
-      }
-      
+      <BlogContainer
+        style={
+          colorMode === "dark"
+            ? { backgroundColor: "#22223b", color: "#fff" }
+            : { backgroundColor: "#EDF1FF", color: "#1A202C" }
+        }
+      >
+        {!isMobileView ? (
+          <ImageWrapper>
+            <Image
+              width="100%"
+              height="100%"
+              objectFit="cover"
+              borderRadius={8}
+              src={postData.cover}
+            />
+          </ImageWrapper>
+        ) : (
+          <i />
+        )}
 
-      <div>
-        <Heading size="md">{postData.title}</Heading>
-        <Box>
-          <Text>{`${dateFormatLong(postData.date)} ${readTime}`}</Text>
-        </Box>
-      </div>
-    </BlogContainer>
+        <div>
+          <Heading size="md">{postData.title}</Heading>
+          <Box>
+            <Text>{`${dateFormatLong(postData.date)} ${readTime}`}</Text>
+          </Box>
+        </div>
+      </BlogContainer>
     </Link>
   );
 };

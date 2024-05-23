@@ -1,14 +1,21 @@
-import { useState } from 'react';
-import { Box, Grid, Heading, Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
-import { NextSeo } from "next-seo";
-import { ImSearch } from "react-icons/im";
+import {
+  Box,
+  Grid,
+  Heading,
+  Input,
+  InputGroup,
+  InputLeftElement,
+} from "@chakra-ui/react";
 import styled from "@emotion/styled";
+import { NextSeo } from "next-seo";
+import { useState } from "react";
+import { ImSearch } from "react-icons/im";
 
 import BlogComponent from "components/blog/BlogComponent";
 import PastBlogsComponent from "components/blog/PastBlogsComponent";
 import { baseUrl } from "constants/baseUrl";
-import { PSOgImage } from "utils/PSOgImage";
 import useFuzzySearch from "hooks/useFuzzySearch";
+import { PSOgImage } from "utils/PSOgImage";
 
 import type { BlogPostListProps } from "./types";
 
@@ -28,7 +35,7 @@ const SearchBarWrapper = styled(Box)`
 `;
 
 const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
   const latest = allPostsData.filter((x) => x.latest);
   const past = allPostsData.filter((x) => !x.latest);
   const blogPosts = latest.map((postData) => (
@@ -65,15 +72,19 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
       </Grid>
 
       <SearchBarWrapper>
-      <Heading as="h1" size="xl">
-        More Posts 📑
-      </Heading>
-      <InputGroup>
-        <InputLeftElement pointerEvents='none'>
-          <ImSearch />
-        </InputLeftElement>
-        <Input type='text' placeholder='Start typing the title...' onChange={(e) => setQuery(e.target.value)} />
-      </InputGroup>
+        <Heading as="h1" size="xl">
+          More Posts 📑
+        </Heading>
+        <InputGroup>
+          <InputLeftElement pointerEvents="none">
+            <ImSearch />
+          </InputLeftElement>
+          <Input
+            type="text"
+            placeholder="Start typing the title..."
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </InputGroup>
       </SearchBarWrapper>
 
       <Grid gap={6} marginBottom={12}>

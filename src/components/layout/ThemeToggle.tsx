@@ -7,14 +7,13 @@ const ThemeToggle = () => {
   return (
     <Box>
       <Button
-        leftIcon={colorMode === "light" ? <RiMoonFill /> : <RiSunFill />}
         colorScheme="gray"
         variant="solid"
         size="sm"
         borderRadius="8px"
         onClick={toggleColorMode}
       >
-        {colorMode === "dark" ? "Light Mode" : "Dark Mode"}
+        {colorMode === "light" ? <RiMoonFill /> : <RiSunFill />}
       </Button>
     </Box>
   );

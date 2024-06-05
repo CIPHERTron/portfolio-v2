@@ -13,7 +13,7 @@ const ThemeToggle = () => {
         borderRadius="8px"
         onClick={toggleColorMode}
       >
-      {colorMode === "light" ? <RiMoonFill /> : <RiSunFill />}
+        {colorMode === "light" ? <RiMoonFill /> : <RiSunFill />}
       </Button>
     </Box>
   );

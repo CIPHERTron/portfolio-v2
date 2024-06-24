@@ -1,6 +1,16 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 export const projects = [
   {
+    name: "Pipeline Maturity Scanner - Harness",
+    desc: "Pipeline Maturity Scanner is a tool for analyzing Harness pipelines. It features a Next.js and TypeScript frontend with ShadCN UI, and an Express.js backend. The tool scans all pipelines across organizations and projects to ensure compliance with configurable rules, such as continuous verification, unit tests, and security scans. Results are displayed on a dashboard with scorecards, showing overall scores for each organization. Users can drill down into projects for detailed scores and view pipeline YAML files.",
+    github: "https://github.com/CIPHERTron/hackweek-24",
+    demo: "https://adoption-maturity.vercel.app/rules",
+    preview:
+      "https://res.cloudinary.com/pritish007/image/upload/v1719226793/Screenshot_2024-06-24_at_4.26.34_PM_lc4lah.png",
+    tech: ["Next.js", "TyepScript", "Shadcn UI", "Express.js", "Harness"],
+    featured: true,
+  },
+  {
     name: "SQL Editor",
     desc: "SQL Editor aims to provide users with a seamless and user-friendly platform for executing SQL queries, displaying query results with pagination, offering search functionality, maintaining a query history log, and supporting the export of results in CSV or JSON formats. The application will also showcase the execution time of queries and provide a list of available tables in the sidebar for easy reference.",
     github: "https://github.com/CIPHERTron/sql-editor",

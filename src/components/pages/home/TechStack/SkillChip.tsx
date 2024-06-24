@@ -21,7 +21,6 @@ function SkillChip({ name, url }: SkillChipProps) {
       padding={2}
       backgroundColor={bg}
       borderRadius="md"
-      cursor="pointer"
     >
       <Flex justify="space-around">
         <Image boxSize="25px" src={url} alt="random text" />

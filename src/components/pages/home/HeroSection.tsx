@@ -38,7 +38,7 @@ const HeroSection = () => {
         <Image
           borderRadius="full"
           boxSize="250px"
-          src="https://res.cloudinary.com/pritish007/image/upload/v1647859319/Personal%20Portfolio/Pritish_1_clsbba.jpg"
+          src="https://res.cloudinary.com/pritish007/image/upload/v1741067213/Personal%20Portfolio/IMG_5455_iwaghq.jpg"
           alt="Pritish Samal"
           marginTop={[8, 4]}
           marginBottom={[8, 4]}
